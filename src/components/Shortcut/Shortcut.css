@@ -1,0 +1,29 @@
+.card-container {
+  background-color: #079dd9;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 10px; 
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.expand-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+.shortcut-container {
+  display: flex;
+  justify-content: space-between;
+}
