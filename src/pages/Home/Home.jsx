@@ -1,4 +1,4 @@
-import { Carousel, Shortcut, HistorySection, ServicesCarousel } from "../../components";
+import { Carousel, Shortcut, HistorySection, ServicesCarousel, Footer } from "../../components";
 import "./Home.css";
 
 export function Home() {
@@ -13,6 +13,7 @@ export function Home() {
         </div>
         <HistorySection></HistorySection>
         <ServicesCarousel></ServicesCarousel>
+        <Footer></Footer>
     </div>
   );
 }

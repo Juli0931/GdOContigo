@@ -10,10 +10,12 @@ h1 {
   font-family: Gilroy-Bold, sans-serif;
   color: rgb(7, 157, 217);
   font-size: 5rem;
+  margin-top: 10rem;
 }
 .contenedor {
   display: flex;
   align-items: center;
+  margin-bottom: 8rem;
 }
 .imagen-grande {
   flex: 1;
@@ -22,7 +24,7 @@ h1 {
   display: flex;
   align-self: flex-start;
   width: 130%;
-  margin-top: 1.5rem;
+  margin-top: 0.1rem;
 }
 .contenido {
   flex: 2;
@@ -30,6 +32,7 @@ h1 {
   flex-direction: column;
   align-self: flex-start;
   margin-left: 10rem;
+  margin-top: ;
 }
 .texto {
   align-self: flex-start;
@@ -40,6 +43,7 @@ p {
 }
 .text1 {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 .text2 {
   font-family: "Gilroy-Bold", sans-serif;
@@ -50,7 +54,7 @@ p {
 }
 .text3 {
   font-size: 1.5rem;
-  margin-top: -0.1rem;
+  margin-top: 2.5rem;
 }
 .imagen-pequeña img {
   align-self: flex-start;

@@ -20,7 +20,7 @@ export function HistorySection() {
           <div className="imagen-pequeña">
             <img src="src\assets\History3.png" alt="Imagen Pequeña 2" />
           </div>
-          <button>Botón</button>
+          <button>Conoce más sobre nuestra historia</button>
         </div>
       </div>
     </>
