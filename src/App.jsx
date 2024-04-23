@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Shortcut, History } from "./components";
+import { Carousel, Shortcut, History, Footer } from "./components";
 
 export function App() {
   return (
@@ -8,6 +8,7 @@ export function App() {
         <Carousel></Carousel>
         <Shortcut text={"Hola"}></Shortcut>
         <History></History>
+        <Footer></Footer>
     </div>
   );
 }
