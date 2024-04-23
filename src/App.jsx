@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Shortcut } from "./components";
+import { Carousel, Shortcut, History } from "./components";
 
 export function App() {
   return (
@@ -7,6 +7,7 @@ export function App() {
         <h1>This is a test :3</h1>
         <Carousel></Carousel>
         <Shortcut text={"Hola"}></Shortcut>
+        <History></History>
     </div>
   );
 }
