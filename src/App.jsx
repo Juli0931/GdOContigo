@@ -1,12 +1,13 @@
-import React from "react";
-import { Carousel, Shortcut } from "./components";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from './pages';
 
 export function App() {
   return (
-    <div>
-        <h1>This is a test :3</h1>
-        <Carousel></Carousel>
-        <Shortcut text={"Hola"}></Shortcut>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
