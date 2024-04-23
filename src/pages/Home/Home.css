@@ -1,0 +1,12 @@
+.carousel-container {
+    position: relative;
+  }
+  
+  .shortcut-container {
+    position: absolute; 
+    bottom: -45px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
+  }
+  

@@ -32,7 +32,7 @@ export function ServicesCarousel() {
       className: "service-link",
     },
     { title: "Industria", image: ServicesImg5, className: "service-link" },
-    { title: "Ver más", image: ServicesImg6, className: "service-link" },
+    { title: "¡Conócelos todos!", image: ServicesImg6, className: "service-link" },
   ];
 
   const settings = {
@@ -73,11 +73,7 @@ export function ServicesCarousel() {
     <div className="services-container">
       <Slider {...settings}>
         {services.map((service, index) => (
-          <div
-            key={index}
-            className={`service-card`}
-            style={{ position: "relative" }}
-          >
+          <div key={index} className={`service-card`}>
             <img src={service.image} alt={service.title} />
             <div
               className="overlay"
@@ -87,12 +83,13 @@ export function ServicesCarousel() {
                     ? "rgba(0, 110, 181, 0.6)"
                     : "rgba(155, 171, 0, 0.6)",
               }}
-            ></div>{" "}
-            {/* Capa de color */}
+            ></div>
             <h2>{service.title}</h2>
-            <a href={"#"} className="service-link">
-              Conoce más
-            </a>
+            {index !== services.length - 1 && (
+              <a href={"#"} className="service-link">
+                Conoce más
+              </a>
+            )}
           </div>
         ))}
       </Slider>
