@@ -22,7 +22,7 @@ const Card = ({ icon, text }) => {
 export function Shortcut() {
   return (
     <div className="shortcut-container">
-      <Card icon={<HiOutlineCurrencyDollar />} text={<><strong>Paga</strong> tu factura</>} />
+      <Card icon={<HiOutlineCurrencyDollar className="stroke-sky-800" />} text={<><strong>Paga</strong> tu factura</>} />
       <Card icon={<LuFiles />} text={<><strong>Saca el duplicado<br /></strong> de tu factura</>} />
       <Card icon={<TiWarningOutline />} text={<><strong>Reporta</strong> un daño</>} />
       <Card icon={<img src={BrillaLogo} alt="Brilla" />} text={<div className="brilla-text"><strong>Conecta</strong> con Brilla</div>} />
