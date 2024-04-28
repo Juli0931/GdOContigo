@@ -4,7 +4,11 @@ export default {
     './app/**/*.{html,js}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'body': ['"Gilroy"'],
+      }
+    },
   },
   plugins: [],
 }

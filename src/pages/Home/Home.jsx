@@ -1,10 +1,11 @@
 import { Carousel, Shortcut, HistorySection, ServicesCarousel, Footer } from "../../components";
 import "./Home.css";
+import Menu from "../../assets/Menu.svg";
 
 export function Home() {
   return (
     <div>
-        <h1>Aquí va el nav</h1>
+        <img src={Menu} className="menu" />
         <div className="carousel-container">
             <Carousel></Carousel>
             <div className="shortcut-container">
