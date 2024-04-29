@@ -1,22 +1,42 @@
 @font-face {
   font-family: Gilroy;
-  src: url('/src/Fonts/Gilroy-Medium.ttf');
-} 
+  src: url("/src/Fonts/Gilroy-Medium.ttf");
+}
+
+.section-container{
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+h2{
+  font-size: 26px;
+  color: var(--DarkBlue);
+  font-weight: bolder;
+}
+
+.card-container:hover {
+  background-color: var(--Blue);
+  color: var(--White);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-container:hover .icon img {
+  content: url("../../assets/BrillaLogoW.png");
+}
 
 .card-container {
   width: 19%;
-  height: 150px;
-  background-color: #079dd9;
-  color: white;
+  height: 175px;
+  background-color: var(--White);
+  color: var(--Blue);
   border-radius: 10px;
   position: relative;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-}
-.card-container:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
 .icon {
@@ -25,29 +45,34 @@
   margin-left: 15px;
 }
 
-.icon img{
+.icon img {
   margin-left: 5px;
+  margin-top: 30px;
+  transition: content 0.3s ease;
 }
 
-.text{
+.text {
   margin-left: 20px;
+  margin-top: 25px;
   font-size: 18px;
   width: 70%;
 }
 
 .brilla-text {
-  margin-top: 6px; 
+  margin-top: 32px;
 }
 
 .expand-icon {
   position: absolute;
   top: 10px;
   right: 10px;
+  font-size: 20px;
 }
 
 .shortcut-container {
   display: flex;
   justify-content: space-between;
-  width: 88%;
+  width: 100%;
   margin: auto;
+  padding-top: 30px;
 }

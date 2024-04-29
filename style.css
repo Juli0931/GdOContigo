@@ -5,6 +5,12 @@
   src: url(/src/Fonts/) format(ttf);
 }
 
+:root {
+  --White: #ffffff; 
+  --Blue: #079DD9; 
+  --DarkBlue: #004A87;
+}
+
 body{
   overflow-x: hidden;
 }

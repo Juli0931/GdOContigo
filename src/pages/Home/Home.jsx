@@ -6,12 +6,8 @@ export function Home() {
   return (
     <div>
         <img src={Menu} className="menu" />
-        <div className="carousel-container">
-            <Carousel></Carousel>
-            <div className="shortcut-container">
-                <Shortcut></Shortcut>
-            </div>
-        </div>
+        <Carousel></Carousel>
+        <Shortcut></Shortcut>
         <HistorySection></HistorySection>
         <ServicesCarousel></ServicesCarousel>
         <Footer></Footer>
