@@ -6,7 +6,7 @@
   font-family: "Gilroy-Bold";
   src: url("src\Fonts\Gilroy-Bold.ttf") format("truetype");
 }
-h1 {
+/* h1 {
   font-family: Gilroy-Bold, sans-serif;
   color: rgb(7, 157, 217);
   font-size: 5rem;
@@ -32,7 +32,7 @@ h1 {
   flex-direction: column;
   align-self: flex-start;
   margin-left: 10rem;
-  margin-top: ;
+  margin-top: 1rem;
 }
 .texto {
   align-self: flex-start;
@@ -88,4 +88,130 @@ button:hover {
 .imagen-grande:hover img {
   transform: scale(1.01);
   opacity: 0.8;
+} */
+
+.HistorySection {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-right: 5rem;
+}
+
+.left-align {
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 26px;
+  color: var(--DarkBlue);
+  text-align: left;
+  font-weight: bolder;
+  margin-left: 4.5rem;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.filter-dropdown {
+  background-color: blue;
+  color: white;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 4% 22% 37% 37%;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.gridImage1 {
+  scale: 85%;
+  margin-top: -1.6rem;
+}
+.gridImage2 {
+  scale: 100%;
+  margin-top: 0.9rem;
+  margin-left: -1.3rem;
+}
+.gridImage3 {
+  scale: 90%;
+  margin-left: -1.9rem;
+}
+.gridImage4 {
+  scale: 90%;
+  margin-top: -0.5rem;
+  margin-left: -1.9rem;
+}
+.overlay-button1 {
+  position: absolute;
+  top: 83%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--Blue); 
+  border-radius:5%;
+  background-color: transparent;
+  color: var(--Blue);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px 20px;
+}
+.overlay-button1:hover {
+  background-color: var(--Blue); 
+  color: #fff; 
+}
+.overlay-button2 {
+  position: absolute;
+  top: 83%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--Blue); 
+  border-radius:5%;
+  background-color: transparent;
+  color: var(--Blue);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px 20px;
+}
+.overlay-button2:hover {
+  background-color: var(--Blue); 
+  color: #fff; 
+}
+.overlay-button3 {
+  position: absolute;
+  top: 36%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--Blue); 
+  border-radius:5%;
+  background-color: transparent;
+  color: var(--Blue);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px 20px;
+}
+.overlay-button3:hover {
+  background-color: var(--Blue); 
+  color: #fff; 
+}
+.overlay-button4 {
+  position: absolute;
+  top: 84%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--Blue); 
+  border-radius:5%;
+  background-color: transparent;
+  color: var(--Blue);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px 20px;
+}
+.overlay-button4:hover {
+  background-color: var(--Blue); 
+  color: #fff; 
 }
