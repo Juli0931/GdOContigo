@@ -18,6 +18,8 @@ header{
 .accesibilityMenu{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 8.5rem;
 }
 
 .accessIcon{
@@ -71,14 +73,13 @@ nav{
 }
 
 .searchMenu button{
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 15rem;
-    height: auto;
+    width: 13rem;
+    height: 2.5rem;
     justify-content: center;
-    border-radius: 0.8rem;
+    border-radius: 0.6rem;
     background-color: #079DD9;
     color: white;
 }
