@@ -1,0 +1,47 @@
+.dropdown-container {
+    position: relative;
+    width: auto;
+  }
+  
+  .dropdown-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  var(--Blue);;
+    cursor: pointer;
+    padding-right: 1rem;
+    color: white;
+  }
+  
+  .icon {
+padding-bottom: 1rem;
+padding-right: 0.5rem;
+}
+  .icon2 {
+padding-right: -0.5rem;
+}
+  
+  .dropdown-list {
+    position: absolute;
+    width: 100%;
+    background-color: white ;
+    list-style-type: none;
+    padding: 1rem 0.5rem;
+    color: var(--Blue);
+  }
+  
+  .dropdown-item {
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdown-item input[type='checkbox'] {
+    margin-right: 5px;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  
+  

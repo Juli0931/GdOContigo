@@ -93,12 +93,15 @@ button:hover {
 .HistorySection {
   display: grid;
   grid-template-rows: auto auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .header {
   display: grid;
   grid-template-columns: auto auto;
   padding-right: 5rem;
+  justify-content: space-between;
 }
 
 .left-align {
@@ -111,17 +114,13 @@ button:hover {
 }
 
 .right-align {
-  text-align: right;
+  margin-right: -1rem;
+  z-index: 100;
 }
-
-.filter-dropdown {
-  background-color: blue;
-  color: white;
-}
-
 .image-grid {
   display: grid;
-  grid-template-columns: 4% 22% 37% 37%;
+  grid-template-columns: 3% 23% 37% 37%;
+  z-index: 50;
 }
 
 .image-container {

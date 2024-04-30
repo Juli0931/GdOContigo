@@ -1,4 +1,5 @@
 import "./HistorySection.css";
+import {Filter} from "../index"
 export function HistorySection() {
   // return (
   //   <>
@@ -26,17 +27,11 @@ export function HistorySection() {
   //   </>
   // );
   return (
-    <div className="descubre-lo-ultimo">
+    <div className="HistorySection">
       <div className="header">
         <div className="left-align">Descubre lo último en GdO</div>
         <div className="right-align">
-          <img src="src\assets\Sort.png" alt="Filtrar" className="filter-icon" />
-          <select className="filter-dropdown">
-            <option value="" disabled selected hidden>Filtrar</option>
-            <option value="eventos"><input type="checkbox"></input> Eventos</option>
-            <option value="noticias"><input type="checkbox"></input> Noticias</option>
-            <option value="tips"><input type="checkbox"></input> Tips</option>
-          </select>
+          <Filter></Filter>
         </div>
       </div>
       <div className="image-grid">
