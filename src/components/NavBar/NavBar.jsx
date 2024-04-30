@@ -7,6 +7,28 @@ import { FaRegUser, FaChevronDown } from "react-icons/fa6";
 
 import "./NavBar.css";
 
+const Submenu = () =>{
+    return(
+        <>
+        <section className="submenu">
+                        <ul>
+                            <div>
+                                <li><a href=""></a>Paga tu factura</li>
+                                <li><a href=""></a>Paga tu factura</li>
+                            </div>
+                            <div>
+                                <li><a href=""></a>Duplicados de facturas</li>
+                                <li><a href=""></a>Puntos de pago</li>
+                            </div>
+                            <div>
+                                <li><a href=""></a>Acuerdos de pago</li>
+                            </div>
+                        </ul>
+                        </section>
+        </>
+    )
+}
+
 export function NavBar() {
   return (
     <>
@@ -20,12 +42,24 @@ export function NavBar() {
         <section className="secondNav">
             <nav>
                 <img src={GdOLogo} className="GdO_logo" />
-                <ul>
-                    <li>Sobre GdO</li>
-                    <li>Pagos y facturación <FaChevronDown className="chevron"/></li>
-                    <li>Servicios <FaChevronDown className="chevron"/></li>
-                    <li>GdO Contigo <FaChevronDown className="chevron"/></li>
-                    <li>Inversionistas <FaChevronDown className="chevron"/></li>
+                <ul className="firstMenu">
+                    <li><a href="">Sobre GdO</a></li>
+                    <li className="pagoFac">
+                        <a href="">Pagos y facturación <FaChevronDown className="chevron"/></a>
+                        <Submenu></Submenu>
+                    </li>
+                    <li className="Servicios">
+                        <a href="">Servicios <FaChevronDown className="chevron"/></a>
+                        <Submenu></Submenu>
+                    </li>
+                    <li className="Contigo">
+                        <a href="">GdO Contigo <FaChevronDown className="chevron"/></a>
+                        <Submenu></Submenu>
+                    </li>
+                    <li className="Inversionistas">
+                        <a href="">Inversionistas <FaChevronDown className="chevron"/></a>
+                        <Submenu></Submenu>
+                    </li>
                 </ul>
             </nav>
             <div className="searchMenu">
