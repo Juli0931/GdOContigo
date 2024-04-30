@@ -6,9 +6,9 @@ export function Footer() {
         <img src="src\assets\Footer_logos.png" alt="Logo" className="footer-logo" />
         <nav className="footer-nav">
           <ul>
-            <li><a href="#">Términos de servicio</a></li>
-            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Trabaje con nosotros</a></li>
             <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Normativa</a></li>
             <li><a href="#">Política de privacidad</a></li>
           </ul>
         </nav>
@@ -17,7 +17,9 @@ export function Footer() {
           <a href="https://www.linkedin.com/company/gases-de-occidente-gdo/"><img src="src\assets\Footer_Linkedin.png" alt="Linkedin" /></a>
           <a href="https://www.instagram.com/gdo.oficial_?igsh=MWloczd4Nms4NDIxaA=="><img src="src\assets\Footer_Instagram.png" alt="Instagram" /></a>
           <a href="https://www.youtube.com/@gasesdeoccidentesaes"><img src="src\assets\Footer_Youtube.png" alt="Youtube" /></a>
-        <p className="footer-text">Copyright © 2024. Todos los derechos reservados</p>
+        </div>
+        <div className="footer-text">
+          <p>Copyright © 2024. TODOS LOS DERECHOS RESERVADOS</p>
         </div>
       </div>
     </footer>
