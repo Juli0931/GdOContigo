@@ -1,4 +1,4 @@
-import { Carousel, Shortcut, HistorySection, ServicesCarousel, Footer, NavBar } from "../../components";
+import { Carousel, Shortcut, HistorySection, ServicesCarousel, Footer, NavBar,Questions } from "../../components";
 import "./Home.css";
 
 export function Home() {
@@ -9,6 +9,7 @@ export function Home() {
         <Shortcut></Shortcut>
         <HistorySection></HistorySection>
         <ServicesCarousel></ServicesCarousel>
+        <Questions></Questions>
         <Footer></Footer>
     </div>
   );
