@@ -30,13 +30,13 @@ export function Questions() {
           </section>
         <section className="consultaSection">
           <h3>Lo más consultado</h3>
-            <FrecuentlyQ question={<>¿Qué debo hacer en caso de detectar un<br></br>olor a gas en mi hogar o negocio?</>}/>
-            <FrecuentlyQ question={<>¿Qué debo hacer si pierdo mi factura de gas?</>}/>
-            <FrecuentlyQ question={<>¿Cuáles son los requisitos para solicitar un<br></br>servicio de conexión de gas natural en mi hogar?</>}/>
-            <FrecuentlyQ question={<>¿Qué debo hacer es tengo problemas con mi medidor<br></br>de gas o experimento fluctuaciones en mi suministro?</>}/>
+            <FrecuentlyQ question={<>¿Qué debo hacer en caso de detectar un olor a gas en mi hogar o negocio?</>}/>
+            <FrecuentlyQ question={<>¿Qué debo hacer si pierdo o no encuentro mi factura de gas?</>}/>
+            <FrecuentlyQ question={<>¿Cuáles son los requisitos para solicitar un servicio de conexión de gas natural en mi hogar?</>}/>
+            <FrecuentlyQ question={<>¿Qué debo hacer es tengo problemas con mi medidor de gas o experimento fluctuaciones en mi suministro?</>}/>
         </section>
     </section>
-    <h3>Ver todas las preguntas frecuentes</h3>
+    <h4 className="hiperLink">Ver todas las preguntas frecuentes</h4>
     </section>
     </>
   );
