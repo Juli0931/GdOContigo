@@ -20,6 +20,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     width: 8.5rem;
+    z-index: 20000;
 }
 
 .accessIcon{
@@ -43,13 +44,14 @@ header{
     -moz-box-shadow: 0px 13px 11px -7px rgba(0,0,0,0.37);
     box-shadow: 0px 13px 11px -7px rgba(0,0,0,0.37);
     padding: 0 6rem 0 6rem;
-    z-index: 2500;
+    z-index: 8000;
 }
 
 nav{
     display: flex;
     flex-direction: row;
     align-items: center;
+    z-index: 5000;
 }
 
 .firstMenu{
@@ -104,16 +106,15 @@ nav{
 }
 
 .submenu{
-    border-top: solid #006EB5 2px ;
     position: absolute;
     display: none;
     list-style: none;
-    z-index: 2000;
+    z-index: -6000;
     background-color: white;
     flex-direction: row;
     width: 300%;
     margin-left: -26%;
-    margin-top: 1.8rem;
+    margin-top: 0;
     height: 15rem;
     -webkit-box-shadow: 0px 13px 11px -7px rgba(0,0,0,0.37);
     -moz-box-shadow: 0px 13px 11px -7px rgba(0,0,0,0.37);
@@ -127,8 +128,9 @@ nav{
 }
 
 .submenu ul div{
-    margin-top: 1rem;
+    margin-top: 1.8rem;
     margin-right: 10rem;
+    z-index: -6000;
 }
 
 .submenu ul div li{
