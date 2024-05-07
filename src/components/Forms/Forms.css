@@ -1,0 +1,87 @@
+.sectionLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.logoDiv{
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indicator{
+    display: flex;
+    background-color: var(--DarkBlue);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicator h2{
+    color: white;
+    font-size: 1rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.indicatorDiv{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.GDOLogo{
+    width: 8rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.inputs input{
+    width: 100%;
+    border: solid 1px var(--DarkBlue);
+    border-radius: 0.4rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+}
+
+.inputs label{
+    color: var(--DarkBlue);
+    font-weight: 800;
+}
+
+.continueButton{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 13rem;
+    height: 2.5rem;
+    justify-content: center;
+    border-radius: 0.6rem;
+    background-color: var(--Blue);
+    color: white;
+    margin-top: 1rem;
+}
+
+.tratamiento{
+    color: var(--DarkBlue);
+    font-weight: 800;
+    margin-top: 2rem;
+}
+
+.formRadio{
+    color: var(--DarkBlue);
+}
+
+.formRadio label{
+    margin-right: 1rem;
+}

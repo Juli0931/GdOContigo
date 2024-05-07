@@ -4,7 +4,7 @@ import FondoPagos from "../../assets/FondoPagos.jpg";
 
 import "./Forms.css";
 
-const Labels = ({texto, text}) =>{
+const Labels = ({texto}) =>{
     return(
         <>
             <div className="inputs">
@@ -18,7 +18,7 @@ const Labels = ({texto, text}) =>{
 const Indicator = ({number}) =>{
     return(
         <>
-            <div>
+            <div className="indicator">
                 <h2>{number}</h2>
             </div>
         </>
@@ -28,25 +28,29 @@ const Indicator = ({number}) =>{
 export function Forms() {
   return (
     <>
-    <section>
-        <img src={GdOLogo} alt="" />
-        <Indicator number={<>1</>}/>
-        <Indicator number={<>2</>}/>
-        <Indicator number={<>3</>}/>
+    <section className="sectionLeft">
+        <div className="logoDiv">
+        <img src={GdOLogo} className="GDOLogo" />
+        <div className="indicatorDiv">
+            <Indicator number={<>1</>}/>
+            <Indicator number={<>2</>}/>
+            <Indicator number={<>3</>}/>
+        </div>
+        </div>
         <form action="">
             <Labels texto={<>Número de contrato o referencia</>}/>
             <Labels texto={<>Correo electrónico</>}/> 
             <Labels texto={<>Teléfono fijo</>}/>
             <Labels texto={<>Teléfono celular</>}/>
-            <label htmlFor="">Autorizo el tratamiento de mis datos</label>
-            <form action="">
+            <label htmlFor="" className="tratamiento">Autorizo el tratamiento de mis datos</label>
+            <form action="" className="formRadio">
                 <label htmlFor=""><input type="radio" /> Sí</label> 
                 <label htmlFor=""><input type="radio" /> No</label>
             </form>
-            <button>Continuar</button>
+            <button className="continueButton">Continuar</button>
         </form>
     </section>
-    <section>
+    <section className="sectionRight">
         <img src={FondoPagos} alt="" />
         <h4>¿Necesitas ayuda?</h4><h5>Mira nuestra guía</h5>
     </section>

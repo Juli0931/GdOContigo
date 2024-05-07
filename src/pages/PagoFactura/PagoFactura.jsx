@@ -3,7 +3,7 @@ import "./PagoFactura.css";
 
 export function PagoFactura() {
   return (
-    <div>
+    <div className="bodyDiv">
         <Forms></Forms>
     </div>
   );
