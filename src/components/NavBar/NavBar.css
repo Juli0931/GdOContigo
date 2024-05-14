@@ -136,6 +136,7 @@ nav{
 .submenu ul div li{
     margin-top: 1rem;
     color: #079DD9;
+    cursor: pointer;
 }
 
 .pagoFac:hover .submenu{
@@ -157,6 +158,5 @@ nav{
 .firstMenu li a:hover{
     font-weight: bold;
     text-decoration: underline;
-}
-
-
+    cursor: pointer;
+} 

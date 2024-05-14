@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
 import GdOLogo from "../../assets/GdO_logo.svg";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { BiUniversalAccess } from "react-icons/bi";
 import { IoSearch } from "react-icons/io5";
 import { FaRegUser, FaChevronDown } from "react-icons/fa6";
+
+import { Link } from "react-router-dom";
 
 import "./NavBar.css";
 
@@ -13,8 +13,8 @@ const Submenu = () =>{
         <section className="submenu">
                         <ul>
                             <div>
-                                <li><a href=""></a>Paga tu factura</li>
-                                <li><a href=""></a>Paga tu factura</li>
+                            <li><Link to="/PagoFactura">Paga tu factura</Link></li>
+                                <li><a href=""></a>Facturación digital</li>
                             </div>
                             <div>
                                 <li><a href=""></a>Duplicados de facturas</li>

@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import GdOLogo from "../../assets/GdO_logo.svg";
 import FondoPagos from "../../assets/FondoPagos.jpg";
 
@@ -43,10 +42,10 @@ export function Forms() {
             <Labels texto={<>Teléfono fijo</>}/>
             <Labels texto={<>Teléfono celular</>}/>
             <label htmlFor="" className="tratamiento">Autorizo el tratamiento de mis datos</label>
-            <form action="" className="formRadio">
+            <div className="formRadio">
                 <label htmlFor=""><input type="radio" /> Sí</label> 
                 <label htmlFor=""><input type="radio" /> No</label>
-            </form>
+            </div>
             <button className="continueButton">Continuar</button>
         </form>
     </section>
