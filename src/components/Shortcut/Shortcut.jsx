@@ -2,7 +2,8 @@ import { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { HiOutlineCurrencyDollar } from "react-icons/hi";
 import { LuFiles } from "react-icons/lu";
-import { TiWarningOutline } from "react-icons/ti";
+import { FaRegUser } from "react-icons/fa6";
+import { TiWarningOutline } from "react-icons/ti"; /* warning ya no se necesita */
 import { FiHelpCircle } from "react-icons/fi";
 import BrillaLogoB from "../../assets/BrillaLogoB.png";
 import BrillaLogoW from "../../assets/BrillaLogoW.png";
@@ -28,9 +29,9 @@ export function Shortcut() {
     <div className="section-container">
       <h2>Accesos rápidos</h2>
       <div className="shortcut-container">
-      <Card icon={<HiOutlineCurrencyDollar />} text={<><strong>Paga</strong> tu factura</>}/>
+      <Card icon={<HiOutlineCurrencyDollar className='w-7 md:w-12' />} text={<><strong>Paga</strong> tu factura</>}/>
       <Card icon={<LuFiles />} text={<><strong>Saca el duplicado<br /></strong>{" "}de tu factura</>}/>
-      <Card icon={<TiWarningOutline />} text={<><strong>Reporta</strong> un daño</>}/>
+      <Card icon={<FaRegUser />} text={<><strong>Soy cliente GdO</strong></>}/>
 
       <div className="card-container" onMouseEnter={() => setBrillaLogo(BrillaLogoW)} onMouseLeave={() => setBrillaLogo(BrillaLogoB)}>
         <div className="icon">

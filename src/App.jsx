@@ -1,7 +1,7 @@
 import React from 'react';
 import "./index.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home , PagoFactura } from './pages';
+import { Home , PagoFactura , Login } from './pages';
 
 
 export function App() {
@@ -10,6 +10,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/PagoFactura" element={<PagoFactura />} />
+        <Route path="/LoginUser" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
