@@ -1,0 +1,44 @@
+.TableHistory {
+  background-color: var(--White);
+}
+
+table {
+  width: 100%;
+    border-radius: 10px; 
+
+}
+
+.TableHistory th, .TableHistory td {
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.EstadoFactura {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.OptionsIcon {
+  margin-left: 3rem;
+  align-self: center;
+  color: var(--DarkBlue);
+}
+
+.Bold {
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.EstadoText {
+  width: 10.5rem;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 2px;
+  box-sizing: border-box;
+}
