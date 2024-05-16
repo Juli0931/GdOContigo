@@ -1,0 +1,63 @@
+.facturacionTitulo2{
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--DarkBlue);
+    position: relative;
+    top: 26rem;
+    left: 43%;
+}
+
+.facturacion2Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicador2{
+    scale: 100%;
+    margin-bottom: 1rem;
+}
+
+.facturacionForm2{
+    max-width: 25rem;
+}
+
+.facturacionInput2{
+    padding: 0.5rem;
+}
+
+.dos{
+margin-top: 0.7rem;
+margin-bottom: 0.5rem;
+}
+
+.notificacion{
+    font-weight: 800;
+    color: var(--DarkBlue);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    position: relative;
+    padding: 20px;
+    border-radius: 4px;
+    outline: none;
+    z-index: 1001;
+}
+
+.popup {
+scale:80%;
+}

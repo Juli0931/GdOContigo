@@ -10,7 +10,7 @@ const SubmenuA = () => {
     <div className="submenu">
       <ul>
         <li><Link to="/PagoFactura">Paga tu factura</Link></li>
-        <li><a href="#">Facturación digital</a></li>
+        <li><Link to="/FacturacionDigital">Facturación digital</Link></li>
         <li><a href="#">Duplicados de facturas</a></li>
         <li><a href="#">Puntos de pago</a></li>
         <li><a href="#">Acuerdos de pago</a></li>

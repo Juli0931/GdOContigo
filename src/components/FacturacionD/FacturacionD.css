@@ -1,0 +1,134 @@
+
+.facturacionHeader{
+    margin-top: 5rem;
+    margin-left: -27rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indicador{
+    scale: 80%;
+    margin-top: 1rem;
+}
+
+.facturacionTitulo{
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--DarkBlue);
+}
+.facturacionContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.facturacionForm{
+    margin-left: 15rem;
+    max-width: 25rem;
+}
+
+.facturacionInput{
+    padding: 0.5rem;
+}
+.Doc{
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.tipoUsuario{
+    font-weight: 800;
+    color: var(--DarkBlue);
+}
+
+.formRadio label{
+    color: var(--DarkBlue);
+    font-weight: 800;
+}
+
+.formRadio input{
+    color: var(--DarkBlue);
+    font-weight: 800;
+    margin-right: 0.5rem;
+}
+
+.selectorDocumento{
+    margin-top: -1rem;
+    position: relative;
+    top: -3.9rem;
+    border: 1px solid var(--DarkBlue);
+    border-radius: 0.4rem;
+    height: 2rem;
+    color: grey;
+}
+
+.listaDocumentos{
+    border-radius: 0.4rem;
+    width: 100%;
+    height: 100%;
+}
+
+.facturacionImg{
+    margin-top: -5rem;
+    scale: 80%;
+}
+
+.terms, .captcha {
+    display: flex;
+    align-items: center;
+}
+
+.terms input{
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.terms label, .captcha label {
+    font-family: 'Gilroy', sans-serif;
+    padding: 0.5rem;
+}
+
+.termsLabel{
+    color: gray;
+}
+
+.highlight {
+    color: blue;
+    text-decoration: underline;
+}
+
+.captcha{
+    padding-left: 0.4rem;
+    border: 1px solid var(--DarkBlue);
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: white;
+}
+
+.captcha input{
+    height: 1.4rem;
+    width: 1.4rem;
+    cursor: pointer;
+}
+
+.continue, .captcha{
+    position: relative;
+    left: 5rem;
+}
+.continue{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    height: 2.5rem;
+    justify-content: center;
+    border-radius: 0.6rem;
+    background-color: var(--Blue);
+    color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    left: 7.5rem;
+    font-weight: 600;
+}

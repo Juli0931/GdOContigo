@@ -1,7 +1,7 @@
 import React from 'react';
 import "./index.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home , PagoFactura , Login, PsePago, HistoryUser } from './pages';
+import { Home , PagoFactura , Login, PsePago, HistoryUser, FacturacionDigital, FacturacionDigital2 } from './pages';
 
 
 export function App() {
@@ -13,6 +13,8 @@ export function App() {
         <Route path="/LoginUser" element={<Login />} />
         <Route path="/PsePago" element={<PsePago />} />
         <Route path="/HistoryUser" element={<HistoryUser />} />
+        <Route path="/FacturacionDigital" element={<FacturacionDigital />} />
+        <Route path="/FacturacionDigital2" element={<FacturacionDigital2 />} />
       </Routes>
     </BrowserRouter>
   );

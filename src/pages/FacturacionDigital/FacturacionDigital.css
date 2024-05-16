@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+}
+
+.bodyDiv{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
