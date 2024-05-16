@@ -28,14 +28,15 @@ export const Indicator = ({number, classNameText}) =>{
 export function Forms() {
   return (
     <>
+    <section className="container">
     <section className="sectionLeft">
         <div className="logoDiv">
         <img src={GdOLogo} className="GDOLogo" />
         <div className="indicatorDiv">
             <Indicator number={<>1</>} classNameText={"indicator"}/>
-            <div class="linea-punteada"></div>
+            <div className="linea-punteada"></div>
             <Indicator number={<>2</>} classNameText={"indicatorVacio"}/>
-            <div class="linea-punteada"></div>
+            <div className="linea-punteada"></div>
             <Indicator number={<>3</>} classNameText={"indicatorVacio"}/>
         </div>
         </div>
@@ -59,6 +60,7 @@ export function Forms() {
     <section className="sectionRight">
         <img src={FondoPagos} alt="" />
         <div className="helpDiv"><h4>¿Necesitas ayuda?</h4><h5>Mira nuestra guía</h5></div>
+    </section>
     </section>
     </>
   );
