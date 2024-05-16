@@ -1,7 +1,17 @@
+.container{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
 .sectionLeft{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    margin-left: 240px;
+    margin-top: -45px;
 }
 
 .logoDiv{
@@ -90,7 +100,7 @@
     border-radius: 0.6rem;
     background-color: var(--Blue);
     color: white;
-    margin-top: 1rem;
+    margin: auto;
 }
 
 .tratamiento{
@@ -109,6 +119,7 @@
 
 .tratamientoSection{
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .sectionRight{
@@ -120,7 +131,7 @@
 
 .sectionRight img{
     height: 100vh;
-    width: auto;
+    width: 50vw;
 }
 
 .helpDiv{
@@ -128,8 +139,8 @@
     display: flex;
     flex-direction: row;
     color: white;
-    top: 95%;
-    left: 45%;
+    top: 92%;
+    left: 55%;
     text-decoration: underline;
 }
 
