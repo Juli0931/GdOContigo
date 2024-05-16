@@ -52,7 +52,7 @@ export function Forms() {
             </div>
             </section>
             <Link to='/PsePago'>
-            <button className="continueButton">Continuar</button>
+            <button className="continueButton">CONTINUAR</button>
             </Link>
         </form>
     </section>

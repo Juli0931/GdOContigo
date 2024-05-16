@@ -13,7 +13,7 @@
 
 .indicator{
     display: flex;
-    background-color: var(--DarkBlue);
+    background-color: var(--TextBlue);
     width: 2rem;
     height: 2rem;
     border-radius: 100%;
@@ -23,7 +23,7 @@
 
 .indicatorVacio{
     display: flex;
-    border: 2px dotted var(--DarkBlue);
+    border: 2px dotted var(--TextBlue);
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 100%;
@@ -62,7 +62,7 @@
 
 .inputs input{
     width: 100%;
-    border: solid 1px var(--DarkBlue);
+    border: solid 1px var(--TextBlue);
     border-radius: 0.4rem;
     margin-top: 0.5rem;
     height: 2rem;
@@ -74,7 +74,7 @@
 }
 
 .linea-punteada{
-    border-top: 2px dotted var(--DarkBlue);
+    border-top: 2px dotted var(--TextBlue);
     width: 15%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -91,16 +91,17 @@
     background-color: var(--Blue);
     color: white;
     margin-top: 1rem;
+    font-weight: bold;
 }
 
 .tratamiento{
-    color: var(--DarkBlue);
+    color: var(--TextBlue);
     font-weight: 800;
     margin-top: 2rem;
 }
 
 .formRadio{
-    color: var(--DarkBlue);
+    color: var(--TextBlue);
 }
 
 .formRadio label{

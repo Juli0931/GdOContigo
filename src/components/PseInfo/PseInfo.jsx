@@ -14,7 +14,7 @@ const InfoDiv = ({nameInfo, infoText}) =>{
 export function PseInfo() {
   return (
     <>
-    <section>
+    <section className="leftSection">
     <div className="indicatorDiv">
     <Indicator number={<>1</>} classNameText={"indicator"}/>
     <div class="linea-punteada"></div>
@@ -22,7 +22,7 @@ export function PseInfo() {
     <div class="linea-punteada"></div>
     <Indicator number={<>3</>} classNameText={"indicatorVacio"}/>
     </div>
-    <h3>Antes de realizar su pago, favor verificar la siguiente información:</h3>
+    <h3 className="textito">Antes de realizar su pago, favor verificar <br />la siguiente información:</h3>
 
     <div>
         <InfoDiv nameInfo={<>Número de factura:</>} infoText={<>2055888</>}/>
@@ -32,18 +32,18 @@ export function PseInfo() {
         <InfoDiv nameInfo={<>Fecha de vencimiento de la factura:</>} infoText={<>27/12/24</>}/>
         <InfoDiv nameInfo={<>Correo electrónico:</>} infoText={<>GDO@gmail.com</>}/>
     </div>
-    <h5>Ésta transacción está sujeta a verificación</h5>
+    <h5 className="textitoH5">· Ésta transacción está sujeta a verificación</h5>
     </section>
-    <section>
+    <section className="rightSection">
         <img src={pseLogo} alt="" />
-        <div>
+        <div className="optionInput">
             <label htmlFor="">TIPO CLIENTE</label>
             <select name="Persona" id="">
                 <option value="">Persona</option>
-                <option value="">Persona</option>
+                <option value="">Empresa</option>
             </select>
         </div>
-        <select name="A continuación seleccione un banco" id="">
+        <select name="A continuación seleccione un banco" id="" className="bankSelect">
             <option value="">Banco agrario de colombia</option>
             <option value="">Banco agrario de colombia</option>
             <option value="">Banco agrario de colombia</option>
@@ -54,7 +54,7 @@ export function PseInfo() {
             <option value="">Banco agrario de colombia</option>
             <option value="">Banco agrario de colombia</option>
         </select>
-        <button>Continuar</button>
+        <button className="continueButton2">CONTINUAR</button>
     </section>
     </>
   );
