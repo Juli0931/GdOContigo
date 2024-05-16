@@ -1,4 +1,5 @@
 import { SlOptions } from "react-icons/sl";
+import { CiCalendar } from "react-icons/ci";
 import "./HistoryPay.css";
 
 export function HistoryPay({ data }) {
@@ -32,11 +33,22 @@ export function HistoryPay({ data }) {
 
             return (
               <tr key={e.id}>
-                <td>{e.mesFacturado}</td>
-                <td>{`${e.periodoInicio} - ${e.periodoFin}`}</td>
+                <td className="MesTxt">{e.mesFacturado}</td>
+                <td className="PeriodoTxt">
+                  <div className="LinePeriod">
+                    <CiCalendar className="CalendarIcon"/>
+                    {e.periodoInicio}
+                  </div>
+                  <div className="LinePeriod">
+                    <CiCalendar className="CalendarIcon"/>
+                    {e.periodoFin}
+                  </div>
+                </td>
                 <td>
                   {e.tuConsumo}{" "}
-                  <span className="Bold" style={{ color: balanceColor }}>{e.balance}</span>
+                  <span className="Bold" style={{ color: balanceColor }}>
+                    {e.balance}
+                  </span>
                 </td>
                 <td className="EstadoFactura">
                   <span
