@@ -1,17 +1,35 @@
 .TableHistory {
   background-color: var(--White);
+  border-radius: 0 20px 20px 20px;
 }
 
 table {
   width: 100%;
-    border-radius: 10px; 
-
 }
 
-.TableHistory th, .TableHistory td {
+.TableHistory th,
+.TableHistory td {
   padding: 1.5rem;
   text-align: center;
   border-bottom: 1px solid #ddd;
+}
+
+.TableHistory th {
+  color: var(--Blue);
+}
+
+.TableHistory td {
+  color: var(--DarkBlue);
+  font-weight: 800;
+
+  &.PeriodoTxt {
+    font-weight: 600;
+  }
+
+  &.MesTxt {
+    font-weight: 900;
+    font-size: 1.1rem;
+  }
 }
 
 tr:nth-child(even) {
@@ -22,6 +40,7 @@ tr:nth-child(even) {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  height: 100%;
 }
 
 .OptionsIcon {
@@ -31,7 +50,7 @@ tr:nth-child(even) {
 }
 
 .Bold {
-  font-weight: 600;
+  font-weight: 800;
   margin-left: 0.5rem;
 }
 
@@ -41,4 +60,18 @@ tr:nth-child(even) {
   border-radius: 5px;
   padding: 2px;
   box-sizing: border-box;
+  font-weight: 600;
+}
+
+.LinePeriod {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.CalendarIcon {
+  align-self: center;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  color: var(--Blue);
 }
