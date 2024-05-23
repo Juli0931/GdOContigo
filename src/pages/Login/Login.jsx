@@ -71,8 +71,17 @@ export function Login() {
                   onChange={handleInputChange}
                 />
               </div>
+              <div className="PasswordInput">
+                <label className="LabelTxt">Contraseña</label>
+                <input
+                  className="SelectorInput"
+                  type="text"
+                  placeholder="Ingresa tu contraseña"
+                  value={inputValue}
+                />
+              </div>
               <h3 className="HelpTxt">
-                <span>¿Necesitas ayuda?</span> Mira nuestra guía
+                <span>¿Olvidaste tu contraseña?</span>
               </h3>
 
               <Link to="/HistoryUser">
