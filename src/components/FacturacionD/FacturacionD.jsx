@@ -54,7 +54,7 @@ export function FacturacionD() {
                 <img className="recaptcha" src={captcha} alt="" />
             </div>
             <button className="continue">
-                <Link to="/FacturacionDigital2">CONTINUAR</Link>
+                <Link to="/FacturacionDigital2">Continuar</Link>
             </button>
         </form>
         <div className="imageContainer">

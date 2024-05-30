@@ -3,7 +3,7 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <img src="src\assets\Footer_logos.png" alt="Logo" className="footer-logo" />
+        <img src="src\assets\Footer_logos.svg" alt="Logo" className="footer-logo" />
         <nav className="footer-nav">
           <ul>
             <li><a href="#">Trabaje con nosotros</a></li>
@@ -13,10 +13,10 @@ export function Footer() {
           </ul>
         </nav>
         <div className="social-icons">
-          <a href="https://twitter.com/GdO_Oficial_"><img src="src\assets\Footer_X.png" alt="X" /></a>
-          <a href="https://www.linkedin.com/company/gases-de-occidente-gdo/"><img src="src\assets\Footer_Linkedin.png" alt="Linkedin" /></a>
-          <a href="https://www.instagram.com/gdo.oficial_?igsh=MWloczd4Nms4NDIxaA=="><img src="src\assets\Footer_Instagram.png" alt="Instagram" /></a>
-          <a href="https://www.youtube.com/@gasesdeoccidentesaes"><img src="src\assets\Footer_Youtube.png" alt="Youtube" /></a>
+          <a href="https://twitter.com/GdO_Oficial_"><img src="src\assets\Footer_X.svg" alt="X" /></a>
+          <a href="https://www.linkedin.com/company/gases-de-occidente-gdo/"><img src="src\assets\Footer_Linkedin.svg" alt="Linkedin" /></a>
+          <a href="https://www.instagram.com/gdo.oficial_?igsh=MWloczd4Nms4NDIxaA=="><img src="src\assets\Footer_Instagram.svg" alt="Instagram" /></a>
+          <a href="https://www.youtube.com/@gasesdeoccidentesaes"><img src="src\assets\Footer_Youtube.svg" alt="Youtube" /></a>
         </div>
         <div className="footer-text">
           <p>Copyright © 2024. TODOS LOS DERECHOS RESERVADOS</p>

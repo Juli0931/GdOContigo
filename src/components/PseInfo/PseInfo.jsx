@@ -22,7 +22,7 @@ export function PseInfo() {
     <div class="linea-punteada"></div>
     <Indicator number={<>3</>} classNameText={"indicatorVacio"}/>
     </div>
-    <h3 className="textito">Antes de realizar su pago, favor verificar <br />la siguiente información:</h3>
+    <h3 className="textito">Antes de realizar su pago, favor verificar la siguiente información:</h3>
 
     <div>
         <InfoDiv nameInfo={<>Número de factura:</>} infoText={<>2055888</>}/>
@@ -44,17 +44,17 @@ export function PseInfo() {
             </select>
         </div>
         <select name="A continuación seleccione un banco" id="" className="bankSelect">
-            <option value="">Banco agrario de colombia</option>
-            <option value="">Banco agrario de colombia</option>
-            <option value="">Banco agrario de colombia</option>
-            <option value="">Banco agrario de colombia</option>
-            <option value="">Banco agrario de colombia</option>
-            <option value="">Banco agrario de colombia</option>
-            <option value="">Banco agrario de colombia</option>
-            <option value="">Banco agrario de colombia</option>
-            <option value="">Banco agrario de colombia</option>
+            <option value="">Banco Agrario de Colombia</option>
+            <option value="">Banco AV Villas</option>
+            <option value="">Banco BBVA</option>
+            <option value="">Banco BCSC</option>
+            <option value="">Banco Citibank</option>
+            <option value="">Banco Davivienda</option>
+            <option value="">Banco de Bogotá</option>
+            <option value="">Banco de Occidente</option>
+            <option value="">Banco Falabella</option>
         </select>
-        <button className="continueButton2">CONTINUAR</button>
+        <button className="continueButton2">Continuar</button>
     </section>
     </>
   );

@@ -74,7 +74,7 @@ export function AtenciónCliente() {
               datos y detalles del inconveniente para que podamos ayudarte de
               manera eficiente.
             </p>
-            <h3>Datos personales</h3>
+            <h3><b>Datos personales</b></h3>
             <div>
               <label className="LabelTxt">Nombre completo</label>
               <input
@@ -135,7 +135,7 @@ export function AtenciónCliente() {
                 onChange={handleInputChange}
               />
             </div>
-            <h3>Detalles de la petición</h3>
+            <h3><b>Detalles de la petición</b></h3>
             <div>
               <label className="LabelTxt">Tipo de petición</label>
               <select
@@ -169,7 +169,8 @@ export function AtenciónCliente() {
                 onChange={handleInputChange}
               />
             </div>
-            <div>
+            <h4>Adjuntar documentos (opcional)</h4>
+            <div className="file-select" id="archivos">
               <label className="LabelTxt">Adjuntar documentos (opcional)</label>
               <input
                 className="SelectorInputFile"

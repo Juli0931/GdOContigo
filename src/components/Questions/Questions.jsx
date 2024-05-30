@@ -25,7 +25,7 @@ export function Questions() {
         <h2>Respondemos a tus preguntas</h2>
         <section className="sectionQuestion">
           <section>
-            <img src={questionsImg} alt="" />
+            <img src={questionsImg} alt="Resuelve tus dudas con Guido" className="rounded-2xl	" />
             <button></button>
           </section>
         <section className="consultaSection">
