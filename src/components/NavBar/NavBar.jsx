@@ -124,6 +124,9 @@ export function NavBar() {
               <a href="#">Inversionistas <FaChevronDown className="chevron"/></a>
               <SubmenuD />
             </li>
+            <li className="AtenciónCliente">
+              <Link to="/AtenciónCliente">Atención al cliente</Link>
+            </li>
           </ul>
         </nav>
         <div className="searchMenu">
