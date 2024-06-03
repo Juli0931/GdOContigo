@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Swal from "sweetalert2";
 import { NavBar, Footer } from "../../components/index";
 import BannerPQR from "../../assets/BannerPQR.png";
 import "./AtenciónCliente.css";
@@ -38,10 +39,81 @@ export function AtenciónCliente() {
     setConsultaId(e.target.value);
   };
 
+  const handleSubmit = () => {
+    const {
+      nombreCompleto,
+      cedula,
+      telefono,
+      email,
+      direccion,
+      ciudad,
+      titulo,
+      descripcion,
+      tipoPeticion,
+    } = formData;
+
+    if (
+      nombreCompleto &&
+      cedula &&
+      telefono &&
+      email &&
+      direccion &&
+      ciudad &&
+      titulo &&
+      descripcion &&
+      tipoPeticion
+    ) {
+      Swal.fire({
+        title: "Solicitud creada exitosamente",
+        html: `
+          <p>Tu reclamo ha sido recibido y registrado correctamente. 
+          A continuación, se presentan los detalles de tu solicitud:</p>
+  
+          <div>
+            <p>Tipo de petición:<b> ${formData.tipoPeticion} </b></p>
+            <p>Número de cédula:<b> ${formData.cedula} </b></p>
+            <p>Dirección de residencia:<b> ${formData.direccion} </b></p>
+          </div>
+      
+          <p>Nuestro equipo de atención al cliente revisará tu caso y se pondrá en 
+          contacto contigo en un plazo de <b>5 días hábiles</b> para proporcionar una solución.</p>
+        `,
+        icon: "success",
+        showCancelButton: true,
+        cancelButtonText: "Corregir datos",
+        cancelButtonColor: "#A1A7C4",
+        confirmButtonText: "Confirmar",
+        confirmButtonColor: "#006EB5",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          setFormData({
+            nombreCompleto: "",
+            cedula: "",
+            telefono: "",
+            email: "",
+            direccion: "",
+            ciudad: "",
+            titulo: "",
+            descripcion: "",
+            archivos: null,
+            tipoPeticion: "",
+          });
+        }
+      });
+    } else {
+      Swal.fire({
+        title: "Error",
+        text: "Por favor, completa todos los campos requeridos.",
+        icon: "error",
+        confirmButtonText: "Cerrar",
+        confirmButtonColor: "#006EB5",
+      });
+    }
+  };
+
   return (
     <>
       <NavBar />
-
       <div className="BannerPQR">
         <img src={BannerPQR} alt="Banner de quejas, peticiones y reclamos" />
       </div>
@@ -65,7 +137,7 @@ export function AtenciónCliente() {
         </button>
       </div>
 
-      <div className="Container">
+      <div className="ContainerPQR">
         {view === "crear" && (
           <form>
             <h2> Crear una nueva petición</h2>
@@ -74,9 +146,11 @@ export function AtenciónCliente() {
               datos y detalles del inconveniente para que podamos ayudarte de
               manera eficiente.
             </p>
-            <h3><b>Datos personales</b></h3>
+            <h3>
+              <b>Datos personales</b>
+            </h3>
             <div>
-              <label className="LabelTxt">Nombre completo</label>
+              <label className="LabelTxt is-required">Nombre completo</label>
               <input
                 className="SelectorInput"
                 type="text"
@@ -86,7 +160,7 @@ export function AtenciónCliente() {
               />
             </div>
             <div>
-              <label className="LabelTxt">Número de cédula</label>
+              <label className="LabelTxt is-required">Número de cédula</label>
               <input
                 className="SelectorInput"
                 type="number"
@@ -96,7 +170,7 @@ export function AtenciónCliente() {
               />
             </div>
             <div>
-              <label className="LabelTxt">Número de teléfono</label>
+              <label className="LabelTxt is-required">Número de teléfono</label>
               <input
                 className="SelectorInput"
                 type="number"
@@ -106,7 +180,7 @@ export function AtenciónCliente() {
               />
             </div>
             <div>
-              <label className="LabelTxt">Correo electrónico</label>
+              <label className="LabelTxt is-required">Correo electrónico</label>
               <input
                 className="SelectorInput"
                 type="email"
@@ -116,7 +190,9 @@ export function AtenciónCliente() {
               />
             </div>
             <div>
-              <label className="LabelTxt">Dirección de residencia</label>
+              <label className="LabelTxt is-required">
+                Dirección de residencia
+              </label>
               <input
                 className="SelectorInput"
                 type="text"
@@ -126,7 +202,7 @@ export function AtenciónCliente() {
               />
             </div>
             <div>
-              <label className="LabelTxt">Ciudad</label>
+              <label className="LabelTxt is-required">Ciudad</label>
               <input
                 className="SelectorInput"
                 type="text"
@@ -135,9 +211,11 @@ export function AtenciónCliente() {
                 onChange={handleInputChange}
               />
             </div>
-            <h3><b>Detalles de la petición</b></h3>
+            <h3>
+              <b>Detalles de la petición</b>
+            </h3>
             <div>
-              <label className="LabelTxt">Tipo de petición</label>
+              <label className="LabelTxt is-required">Tipo de petición</label>
               <select
                 className="SelectorInput"
                 name="tipoPeticion"
@@ -151,17 +229,17 @@ export function AtenciónCliente() {
               </select>
             </div>
             <div>
-              <label className="LabelTxt">Asunto</label>
+              <label className="LabelTxt is-required">Asunto</label>
               <input
                 className="SelectorInput"
                 type="text"
-                name="asunto"
-                value={formData.asunto}
+                name="titulo"
+                value={formData.titulo}
                 onChange={handleInputChange}
               />
             </div>
             <div>
-              <label className="LabelTxt">Descripción</label>
+              <label className="LabelTxt is-required">Descripción</label>
               <textarea
                 className="SelectorInput"
                 name="descripcion"
@@ -179,7 +257,7 @@ export function AtenciónCliente() {
                 onChange={handleFileChange}
               />
             </div>
-            <button className="SubmitBtn" type="button">
+            <button className="SubmitBtn" type="button" onClick={handleSubmit}>
               Enviar
             </button>
           </form>
@@ -193,7 +271,7 @@ export function AtenciónCliente() {
               tu número de petición o número de cedula.
             </p>
             <div>
-              <label className="LabelTxt">Número de petición</label>
+              <label className="LabelTxt">Ingresa el número de petición o cédula</label>
               <input
                 className="SelectorInput"
                 type="number"

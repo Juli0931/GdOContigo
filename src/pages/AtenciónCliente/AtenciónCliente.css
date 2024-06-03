@@ -1,14 +1,15 @@
-.Container {
+.ContainerPQR {
   width: 33%;
   margin: auto;
 
-  & h2,h3{
+  & h2,
+  h3 {
     color: var(--TextBlue);
     text-align: center;
     margin: 1rem;
   }
 
-  & p{
+  & p {
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -78,13 +79,13 @@
   width: 100%;
 }
 
-h4{
+h4 {
   color: var(--TextBlue);
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-.file-select{
+.file-select {
   position: relative;
   display: inline-block;
 }
@@ -92,12 +93,12 @@ h4{
 .file-select::before {
   background-color: white;
   border: dashed 2px var(--TextBlue);
-  color: #7E84A3;
+  color: #7e84a3;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  content: 'Adjunta tus archivos';
+  content: "Adjunta tus archivos";
   position: absolute;
   left: 0;
   right: 0;
@@ -113,5 +114,32 @@ h4{
 }
 
 #archivos::before {
-  content: 'Adjunta tus archivos';
+  content: "Adjunta tus archivos";
+}
+
+.is-required:after {
+  content: "*";
+  margin-left: 3px;
+  color: red;
+  font-weight: bold;
+}
+
+/* Pop Up */
+.swal2-popup .swal2-html-container p {
+  color: var(--TextBlue) !important;
+}
+
+.swal2-title {
+  color: var(--TextBlue) !important;
+}
+
+.swal2-popup {
+  width: 50% !important;
+}
+
+.swal2-popup .swal2-html-container div{
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
