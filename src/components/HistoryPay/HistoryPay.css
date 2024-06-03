@@ -17,7 +17,7 @@ table {
   color: var(--Blue);
 }
 
-.TableHistory tr{
+.TableHistory tr {
   align-self: center;
 }
 
@@ -43,7 +43,7 @@ tr:nth-child(even) {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: 0.8rem;
+  margin-top: 0.7rem;
 }
 
 .OptionsIcon {
@@ -88,8 +88,47 @@ tr:nth-child(even) {
     display: none;
   }
 
-  .OptionsIcon {
-    margin-left: 2rem;
+  .TableHistory {
+    background-color: var(--White);
+    border-radius:20px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .TableHistory th,
+  .TableHistory td {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 12px;
+
+  }
+
+  .TableHistory td.MesTxt {
+    font-weight: 900;
+    font-size: 12px;
+  }
+
+  td.EstadoFactura{
+    width: 12rem;
+  }
+
+  
+  td.EstadoFactura .OptionsIcon {
+    margin-left: 1rem;
     margin-right: 1rem;
+    align-self: center;
+    color: var(--DarkBlue);
+  }
+
+  .EstadoText {
+    width: 6rem;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 12px;
   }
 }

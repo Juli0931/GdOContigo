@@ -16,19 +16,58 @@
   margin-top: 0.5rem;
 }
 
-.PagosBtn, .RetosBtn{
-    border-radius: 8px 8px 0 0;
+.PagosBtn,
+.RetosBtn {
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  width: 8rem;
+  height: 4rem;
+  justify-content: center;
+  margin-top: 1rem;
+  background-color: var(--White);
+  color: var(--DarkBlue);
+  margin-right: 0.5rem;
+
+  &.RetosBtn {
+    background-color: var(--Blue);
+    color: var(--White);
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .Saludo {
+    font-size: 20px;
+  }
+
+  .SelectorTable {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  div .SelectorTable .PagosBtn,
+  .RetosBtn {
     cursor: pointer;
-    width: 8rem;
-    height: 4rem;
+    width: 10rem;
+    height: 2.5rem;
     justify-content: center;
     margin-top: 1rem;
-    background-color: var(--White);
-    color: var(--DarkBlue);
-    margin-right: 0.5rem;
+    background-color: #bebebe;
+    color: var(--White);
+    margin: 0;
+  }
 
-    &.RetosBtn{
-        background-color: var(--Blue);
-        color: var(--White);
-    }
+  .PagosBtn {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .RetosBtn {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .PagosBtn.Selected,
+  .RetosBtn.Selected {
+    background-color: var(--DarkBlue);
+  }
 }

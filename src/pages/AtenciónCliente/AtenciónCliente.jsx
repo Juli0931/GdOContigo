@@ -118,7 +118,7 @@ export function AtenciónCliente() {
         <img src={BannerPQR} alt="Banner de quejas, peticiones y reclamos" />
       </div>
 
-      <div className="Selector">
+      <div className="SelectorPQR">
         <button
           type="button"
           onClick={() => setView("crear")}

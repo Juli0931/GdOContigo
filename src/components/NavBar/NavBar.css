@@ -1,7 +1,12 @@
+/* Estilos generales */
 header {
   width: 100%;
   height: auto;
   position: relative;
+}
+
+.menuButton {
+  display: none;
 }
 
 .firstNav {
@@ -41,8 +46,6 @@ header {
   flex-direction: row;
   background-color: white;
   justify-content: space-between;
-  -webkit-box-shadow: 0px 13px 11px -7px rgba(0, 0, 0, 0.37);
-  -moz-box-shadow: 0px 13px 11px -7px rgba(0, 0, 0, 0.37);
   box-shadow: 0px 13px 11px -7px rgba(0, 0, 0, 0.37);
   padding: 0 6rem 0 6rem;
   z-index: 8000;
@@ -62,7 +65,7 @@ nav {
 }
 
 .firstMenu a {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -73,22 +76,24 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 5rem;
 }
 
 .searchMenu button {
   display: flex;
   align-items: center;
   flex-direction: row;
-  width: 13rem;
+  width: auto;
   height: 2.5rem;
   justify-content: center;
   border-radius: 0.6rem;
   background-color: #079dd9;
   color: white;
+  padding: 1rem;
 }
 
 .searchMenu button h3 {
-  margin-left: 0.5rem;
+  margin: 0.5rem;
 }
 
 .GdO_logo {
@@ -98,6 +103,7 @@ nav {
 
 .chevron {
   font-size: 0.8rem;
+  margin: 4px;
 }
 
 .searchIcon {
@@ -107,64 +113,145 @@ nav {
 }
 
 .submenu {
-    position: absolute;
-    display: none;
-    list-style: none;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 100%;
+  height: 18rem;
+  z-index: -6000;
+  background-color: white;
+  flex-direction: row;
+  box-shadow: 0px 13px 11px -7px rgba(0, 0, 0, 0.37);
+  padding: 0 6rem 0 6rem;
+  left: 0;
+}
+
+.submenuContainer {
+  margin: 0 100px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.firstMenu li:hover .submenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  background-color: white;
+}
+
+.submenu ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  justify-content: left;
+}
+
+.submenu ul h3 {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--DarkBlue);
+}
+
+.submenu ul li {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.submenu ul li a {
+  text-decoration: none;
+  color: #079DD9;
+  margin-left: 0;
+}
+
+.submenu ul li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .firstNav {
+    padding-right: 1rem;
+  }
+
+  .secondNav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 0;
+  }
+
+  nav {
     width: 100%;
-    height: 18rem;
-    z-index: -6000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .secondNav.open nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .GdO_logo {
+    height: 2.5rem;
+    position: relative;
+  }
+
+  .searchMenu {
+    position: relative;
+  }
+
+  .firstMenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
     background-color: white;
-    flex-direction: row;
-    box-shadow: 0px 13px 11px -7px rgba(0,0,0,0.37);
-    padding: 0 6rem 0 6rem;
-    left: 0;
+    padding: 1rem 0;
+    align-items: flex-start; 
+  }
+
+  .firstMenu.active {
+    display: flex;
+  }
+
+  .searchMenu .searchIcon {
+    display: none;
+  }
+
+  .searchMenu button {
+    width: auto;
+    padding: 0 1rem;
+  }
+
+  .searchMenu button h3 {
+    display: none;
+  }
+
+  .submenu {
+    padding: 1rem;
   }
 
   .submenuContainer {
-    margin: 0 100px;
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    justify-content: flex-start;
-  }
-
-
-  .firstMenu li:hover .submenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: absolute;
-    background-color: white;
-  }
-  
-  .submenu ul {
-    display: flex;
     flex-direction: column;
-    padding: 0.5rem 1rem;
-    justify-content: left;
+    margin: 0;
   }
-  
-  .submenu ul h3 {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--DarkBlue);
+
+  .submenu ul {
+    margin-bottom: 1rem;
   }
-  
-  .submenu ul li {
-    margin-top: 1rem;
-    cursor: pointer;
-  }
-  
-  .submenu ul li a {
-    text-decoration: none;
-    color: #079DD9;
-    margin-left: 0;
-  }
-  
-  .submenu ul li a:hover {
-    font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer;
-  } 
+}
