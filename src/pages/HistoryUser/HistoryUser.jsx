@@ -5,7 +5,7 @@ export function HistoryUser() {
   const data = [
     {
       id: 1,
-      mesFacturado: "Facturación de mayo",
+      mesFacturado: "Facturación mayo",
       periodoInicio: "15 Abril 2024",
       periodoFin: "15 Mayo 2024",
       tuConsumo: "50m³",
@@ -14,7 +14,7 @@ export function HistoryUser() {
     },
     {
       id: 2,
-      mesFacturado: "Facturación de abril",
+      mesFacturado: "Facturación abril",
       periodoInicio: "15 Marzo 2024",
       periodoFin: "15 Abril 2024",
       tuConsumo: "32m³",
@@ -23,7 +23,7 @@ export function HistoryUser() {
     },
     {
       id: 3,
-      mesFacturado: "Facturación de marzo",
+      mesFacturado: "Facturación marzo",
       periodoInicio: "15 Febrero 2024",
       periodoFin: "15 Marzo 2024",
       tuConsumo: "20m³",
@@ -32,7 +32,7 @@ export function HistoryUser() {
     },
     {
       id: 4,
-      mesFacturado: "Facturación de febrero",
+      mesFacturado: "Facturación febrero",
       periodoInicio: "15 Enero 2024",
       periodoFin: "15 Febrero 2024",
       tuConsumo: "30m³",
@@ -41,7 +41,7 @@ export function HistoryUser() {
     },
     {
       id: 5,
-      mesFacturado: "Facturación de enero",
+      mesFacturado: "Facturación enero",
       periodoInicio: "15 Diciembre 2023",
       periodoFin: "15 Enero 2024",
       tuConsumo: "20m³",
@@ -50,7 +50,7 @@ export function HistoryUser() {
     },
     {
       id: 6,
-      mesFacturado: "Facturación de diciembre",
+      mesFacturado: "Facturación diciembre",
       periodoInicio: "15 Noviembre 2023",
       periodoFin: "15 Diciembre 2024",
       tuConsumo: "30m³",
