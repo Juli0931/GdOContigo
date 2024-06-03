@@ -1,6 +1,8 @@
 import { HistoryPay, NavBar } from "../../components/index";
 import "./HistoryUser.css";
 
+import { Link } from "react-router-dom";
+
 export function HistoryUser() {
   const data = [
     {
@@ -67,7 +69,9 @@ export function HistoryUser() {
         <h2 className="Saludo">Nos encanta tenerte de nuevo</h2>
         <div className="SelectorTable">
           <button className="PagosBtn">Historial de facturación</button>
+          <Link to="/MisRetos">
           <button className="RetosBtn">Mis retos</button>
+          </Link>
         </div>
         <HistoryPay data={data} />
       </div>
