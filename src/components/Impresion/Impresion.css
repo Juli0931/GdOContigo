@@ -1,0 +1,75 @@
+.LeftSect{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    color: var(--TextBlue);
+    justify-content: center;
+}
+
+.RightSect{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoRight{
+    width: 100%;
+}
+
+.LeftInfo{
+    width: 100%;
+}
+
+.textInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numberTextInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.transaccionDiv{
+    display: flex;
+    height: 3rem;
+    background-color: #409D3E;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.transaccionDiv h4{
+    color: white;
+}
+
+.InfoTitles{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.InfoTitles h4{
+    font-weight: 800;
+}
+
+.buttonDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonDiv button{
+    margin-left: 2rem;
+    text-decoration: underline;
+}
+
+.buttonDiv h6{
+    color: #AFAFAF;
+}

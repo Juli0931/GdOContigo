@@ -2,7 +2,9 @@ import { Labels, Indicator } from "../Forms/Forms";
 import pseLogo from '../../assets/pseLogo.svg'
 import "./PseInfo.css";
 
-const InfoDiv = ({nameInfo, infoText}) =>{
+import { Link } from "react-router-dom";
+
+export const InfoDiv = ({nameInfo, infoText}) =>{
     return(
         <div className="infoDiv">
             <h2>{nameInfo}</h2>
@@ -54,7 +56,9 @@ export function PseInfo() {
             <option value="">Banco de Occidente</option>
             <option value="">Banco Falabella</option>
         </select>
+        <Link to="/ImprimirFactura">
         <button className="continueButton2">Continuar</button>
+        </Link>
     </section>
     </>
   );
