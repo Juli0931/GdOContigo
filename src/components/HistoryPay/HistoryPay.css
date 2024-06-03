@@ -78,3 +78,18 @@ tr:nth-child(even) {
   margin-right: 0.5rem;
   color: var(--Blue);
 }
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .TableHistory th:nth-child(2),
+  .TableHistory td:nth-child(2),
+  .TableHistory th:nth-child(3),
+  .TableHistory td:nth-child(3) {
+    display: none;
+  }
+
+  .OptionsIcon {
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+}
