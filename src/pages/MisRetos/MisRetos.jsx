@@ -1,4 +1,4 @@
-import { Retos, NavBar } from "../../components";
+import { Retos, HistoryPay, NavBar, Footer } from "../../components";
 import "./MisRetos.css";
 
 export function MisRetos() {
@@ -6,6 +6,7 @@ export function MisRetos() {
     <div>
         <NavBar></NavBar>
         <Retos></Retos>
+        <Footer />
     </div>
   );
 }
