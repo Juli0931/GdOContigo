@@ -123,3 +123,47 @@
   background-color: var(--DarkBlue); 
   color: #fff; 
 }
+
+.noticesDiv{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-container{
+    display: none;
+  }
+
+  .noticesDiv{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: auto;
+    
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+  .gdoNotices{
+    display: inline-block;
+    margin-left: 1.6rem;
+    margin-right: -1rem;
+  }
+
+  .left-align{
+    margin-left: 2rem;
+  }
+
+  .HistorySection{
+    margin-top: 2rem;
+  }
+
+}

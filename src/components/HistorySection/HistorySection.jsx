@@ -1,31 +1,10 @@
 import "./HistorySection.css";
 import {Filter} from "../index"
+import EventosImg from '../../assets/eventosImg.svg'
+import TipsImg from '../../assets/tipsImg.svg'
+import NoticiasImg from '../../assets/noticiasImg.svg'
 export function HistorySection() {
-  // return (
-  //   <>
-  //     <h1>01 ⎯⎯⎯</h1>
-  //     <div className="contenedor">
-  //       <div className="imagen-grande">
-  //         <img src="src\assets\History1.png" alt="Imagen Grande" />
-  //       </div>
-  //       <div className="contenido">
-  //         <div className="texto">
-  //           <p className="text1">Así celebramos</p>
-  //           <p className="text2">25 años de operaciones</p>
-  //           <img className="line" src="src\assets\Line.png" alt="linea" />
-  //           <p className="text3">Y la historia continúa...</p>
-  //         </div>
-  //         <div className="imagen-pequeña">
-  //           <img src="src\assets\History2.png" alt="Imagen Pequeña 1" />
-  //         </div>
-  //         <div className="imagen-pequeña">
-  //           <img src="src\assets\History3.png" alt="Imagen Pequeña 2" />
-  //         </div>
-  //         <button>Conoce más sobre nuestra historia</button>
-  //       </div>
-  //     </div>
-  //   </>
-  // );
+
   return (
     <div className="HistorySection">
       <div className="header">
@@ -52,6 +31,11 @@ export function HistorySection() {
           <img src="src\assets\grid4.png" alt="Imagen 4" className="gridImage4" />
           <button className="overlay-button4">Agendarme</button>
         </div>
+      </div>
+      <div className="noticesDiv">
+      <img src={EventosImg} alt="" className="gdoNotices"/>
+      <img src={TipsImg} alt="" className="gdoNotices"/>
+      <img src={NoticiasImg} alt="" className="gdoNotices"/>
       </div>
     </div>
   );

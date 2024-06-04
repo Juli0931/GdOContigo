@@ -70,6 +70,8 @@ export function ServicesCarousel() {
   };
 
   return (
+    <>
+    <h2 className="carouselTitle">¿En qué te podemos ayudar?</h2>
     <div className="services-container">
       <Slider {...settings}>
         {services.map((service, index) => (
@@ -94,5 +96,6 @@ export function ServicesCarousel() {
         ))}
       </Slider>
     </div>
+    </>
   );
 }
