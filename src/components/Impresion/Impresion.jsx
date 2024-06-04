@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export function Impresion() {
   return (
-    <>
+    <section className="container">
     <section className="LeftSect">
     <div className="indicatorDiv">
         <Indicator number={1} classNameText={"indicator"}/>
@@ -18,8 +18,7 @@ export function Impresion() {
     </div>
     <div className="textInfo">
     <div className="numberTextInfo">
-        <h4>Si requiere más información acerca e la transacción, por favor contactarse</h4>
-        <h4>al número telefónico: 3165697633</h4>
+        <h4>Si requiere más información acerca e la transacción, por favor contactarse al número telefónico: 3165697633</h4>
     </div>
     <div className="transaccionDiv">
         <h4>Transacción Aprobada</h4>
@@ -54,6 +53,6 @@ export function Impresion() {
         <button>Imprimir esta página</button>
     </div>
     </section>
-    </>
+    </section>
   );
 }

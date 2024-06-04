@@ -15,18 +15,18 @@ export const InfoDiv = ({nameInfo, infoText}) =>{
 
 export function PseInfo() {
   return (
-    <>
+    <section className="container">
     <section className="leftSection">
     <div className="indicatorDiv">
     <Indicator number={<>1</>} classNameText={"indicator"}/>
-    <div class="linea-punteada"></div>
+    <div className="linea-punteada"></div>
     <Indicator number={<>2</>} classNameText={"indicator"}/>
-    <div class="linea-punteada"></div>
+    <div className="linea-punteada"></div>
     <Indicator number={<>3</>} classNameText={"indicatorVacio"}/>
     </div>
     <h3 className="textito">Antes de realizar su pago, favor verificar la siguiente información:</h3>
 
-    <div>
+    <div id="infoContainer">
         <InfoDiv nameInfo={<>Número de factura:</>} infoText={<>2055888</>}/>
         <InfoDiv nameInfo={<>Concepto:</>} infoText={<>XXXXXXX</>}/>
         <InfoDiv nameInfo={<>Valor total a pagar:</>} infoText={<>$47.500</>}/>
@@ -60,6 +60,6 @@ export function PseInfo() {
         <button className="continueButton2">Continuar</button>
         </Link>
     </section>
-    </>
+    </section>
   );
 }

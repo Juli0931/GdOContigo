@@ -157,13 +157,15 @@
     color: 959595;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-
+    .sectionRight{
+        display: none;
+    }
     .sectionLeft {
         margin-left: 0;
         margin-top: 0;
@@ -175,12 +177,8 @@
         margin-top: 5%;
     }
 
-    .indicatorDiv {
-        flex-direction: column;
-    }
-
     .linea-punteada {
-        width: 100%;
+        width: 20%;
     }
 
     .GDOLogo {
@@ -207,3 +205,4 @@
         margin-bottom: 5px;
     }
 }
+

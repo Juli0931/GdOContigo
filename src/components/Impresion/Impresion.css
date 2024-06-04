@@ -73,3 +73,60 @@
 .buttonDiv h6{
     color: #AFAFAF;
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        overflow-x: hidden;
+    }
+    .LeftSect{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        color: var(--TextBlue);
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    .RightSect{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    .numberTextInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8rem;  
+        margin: 1.5rem 0 1.5rem 0;
+    }
+    .numberTextInfo h4{
+        width: 15rem;
+    }
+    .infoDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between ;
+        padding: 1rem;
+
+    }
+    .infoDiv h2{
+        color: var(--TextBlue);
+        font-size: 0.8rem;
+    }
+    .buttonDiv{
+        flex-direction: column;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+    .buttonDiv button {
+        margin-left: 0rem;
+        text-decoration: underline;
+    }
+}

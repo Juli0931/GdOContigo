@@ -110,3 +110,78 @@
 .bankSelect option:hover{
     background-color: #AFAFAF;
 }
+
+@media (max-width: 768px) {
+    .textito {
+        margin-left: 0;
+        padding: 0rem 2.5rem 0rem 2.5rem;
+        margin-top: 1rem;
+        font-weight: 800;
+        font-size: 0.8rem;
+    }
+    .leftSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: -3rem;
+    }
+    #infoContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .infoDiv{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightSection {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.3rem;
+        height: auto;
+        padding: 2rem;
+        width: 100%;
+        background-color: var(--TextBlue);
+        align-items: center;
+        justify-content: center;
+    }
+    .optionInput {
+        background-color: white;
+        width: 115%;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0.4rem;
+        color: var(--TextBlue);
+        margin-bottom: 1rem;
+    }
+    .optionInput label{
+        font-size: 0.8rem;
+    }
+    .optionInput select{
+        background-color: var(--TextBlue);
+        color: white;
+        height: 2.2rem;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.4rem;
+        font-size: 0.8rem;
+    }
+    .bankSelect {
+        width: 115%;
+        height: 2rem;
+        border-radius: 0.3rem;
+    }
+    .continueButton2{
+        width: 40.7vh;
+        margin-top: 2rem;
+    }
+}
