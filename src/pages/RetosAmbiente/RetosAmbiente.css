@@ -1,0 +1,31 @@
+.bannerRetosContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.optionsDiv{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 2.5rem 0 5rem;
+}
+
+.optionsDiv h4{
+    margin-left: 3rem;
+}
+
+.todosOption{
+    color: var(--DarkBlue);
+    width: 6rem;
+    border-bottom: solid 2px var(--DarkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardsContainerBody{
+    padding: 3rem 2.5rem 0 2.5rem;
+}

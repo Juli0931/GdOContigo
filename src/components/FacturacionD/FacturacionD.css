@@ -10,12 +10,15 @@
 .indicador{
     scale: 80%;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: -4rem;
 }
 
 .facturacionTitulo{
     font-weight: 800;
     font-size: 1.5rem;
     color: var(--DarkBlue);
+    margin-left: -4rem;
 }
 .facturacionContainer{
     display: flex;
@@ -105,6 +108,7 @@
     justify-content: center;
     width: 50%;
     background-color: white;
+    margin: 1rem;
 }
 
 .captcha input{
@@ -124,11 +128,11 @@
     width: auto;
     height: 2.5rem;
     justify-content: center;
-    border-radius: 0.6rem;
+    border-radius: 0.3rem;
     background-color: var(--Blue);
     color: white;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 1rem;
-    left: 7.5rem;
+    left: 9rem;
     font-weight: 600;
 }

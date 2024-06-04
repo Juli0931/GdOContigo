@@ -61,3 +61,30 @@
     margin-left: 8%;
     margin-bottom: 2rem;
 }
+
+.preguntaGuido{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .consultaSection{
+      display: none;
+    }
+
+    .preguntaGuido{
+        display: block;
+        width: 90vw;
+    }
+    
+    .questionsImg{
+        display: none;
+    }
+
+    .questionContainer h2{
+        margin-left: 2rem;
+    }
+
+    .hiperLink{
+        margin-left: 2rem;
+    }
+  }

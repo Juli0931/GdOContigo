@@ -1,8 +1,10 @@
 import GdOLogo from "../../assets/GdO_logo.svg";
 import { BiUniversalAccess } from "react-icons/bi";
 import { IoSearch } from "react-icons/io5";
-import { FaRegUser, FaChevronDown } from "react-icons/fa6";
+import { FaRegUser, FaChevronDown, FaBars } from "react-icons/fa6";
+import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 import "./NavBar.css";
 
 const SubmenuA = () => {
@@ -62,7 +64,7 @@ const SubmenuC = () => {
 
         <ul>
           <li><h3>Ahorra con GdO</h3></li>
-          <li><a href="#">Desafios de ahorro energético</a></li>
+          <li><Link to={"/RetosAmbiente"}><a href="#">Desafios de ahorro energético</a></Link></li>
           <li><a href="#">Programas de incentivos</a></li>
           <li><a href="#">Consejos para ahorrar energía</a></li>
         </ul>
@@ -93,6 +95,12 @@ const SubmenuD = () => {
 };
 
 export function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header>
       <section className="firstNav">
@@ -101,43 +109,53 @@ export function NavBar() {
           <BiUniversalAccess className="accessIcon" />
         </div>
       </section>
-      <section className="secondNav">
+      <section className={`secondNav ${isOpen ? "open" : ""}`}>
         <nav>
-        <Link to="/">
-          <img src={GdOLogo} alt="GdO Logo" className="GdO_logo" />
-        </Link>
-          <ul className="firstMenu">
+          <button className="menuButton" onClick={toggleMenu}>
+            {isOpen ? <FaTimes className="closeIcon" /> : <FaBars className="hamburgerIcon" />}
+          </button>
+
+          {!isOpen && (
+            <Link to="/">
+              <img src={GdOLogo} alt="GdO Logo" className="GdO_logo" />
+            </Link>
+          )}
+
+          <ul className={`firstMenu ${isOpen ? "active" : ""}`}>
             <li><a href="#">Sobre GdO</a></li>
             <li className="pagoFac">
-              <a href="#">Pagos y facturación <FaChevronDown className="chevron"/></a>
+              <a href="#">Pagos y facturación <FaChevronDown className="chevron" /></a>
               <SubmenuA />
             </li>
             <li className="Servicios">
-              <a href="#">Servicios <FaChevronDown className="chevron"/></a>
+              <a href="#">Servicios <FaChevronDown className="chevron" /></a>
               <SubmenuB />
             </li>
             <li className="Contigo">
-              <a href="#">GdO Contigo <FaChevronDown className="chevron"/></a>
+              <a href="#">GdO Contigo <FaChevronDown className="chevron" /></a>
               <SubmenuC />
             </li>
             <li className="Inversionistas">
-              <a href="#">Inversionistas <FaChevronDown className="chevron"/></a>
+              <a href="#">Inversionistas <FaChevronDown className="chevron" /></a>
               <SubmenuD />
             </li>
             <li className="AtenciónCliente">
               <Link to="/AtenciónCliente">Atención al cliente</Link>
             </li>
           </ul>
+
+          {!isOpen && (
+            <div className="searchMenu">
+              <IoSearch className="searchIcon" />
+              <Link to="/LoginUser">
+                <button>
+                  <FaRegUser />
+                  <h3>Soy cliente GdO</h3>
+                </button>
+              </Link>
+            </div>
+          )}
         </nav>
-        <div className="searchMenu">
-          <IoSearch className="searchIcon"/>
-          <Link to="/LoginUser">
-            <button>
-              <FaRegUser />
-              <h3>Soy cliente GdO</h3>
-            </button>
-          </Link>
-        </div>
       </section>
     </header>
   );

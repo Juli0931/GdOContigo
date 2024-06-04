@@ -6,6 +6,7 @@
   top: 0;
   max-height: 100vh;
   overflow-y: hidden;
+  width: 100%;
 }
 
 .FormContainer {
@@ -27,10 +28,10 @@
 .HelpTxt {
   text-align: center;
   color: var(--TextBlue);
+}
 
-  &.WelcomeTxt {
-    font-size: 28px;
-  }
+.WelcomeTxt {
+  font-size: 28px;
 }
 
 .InfoTxt {
@@ -47,10 +48,10 @@
   cursor: pointer;
   margin-top: 0.8rem;
   margin-bottom: 2rem;
+}
 
-  & span {
-    font-weight: 600;
-  }
+.HelpTxt span {
+  font-weight: 600;
 }
 
 .Selector {
@@ -78,14 +79,14 @@
   margin-top: 1rem;
   background-color: #bebebe;
   color: var(--White);
+}
 
-  &.CedulaBtn {
-    border-radius: 5px 0 0 5px;
-  }
+.CedulaBtn {
+  border-radius: 5px 0 0 5px;
+}
 
-  &.ContratoBtn {
-    border-radius: 0 5px 5px 0;
-  }
+.ContratoBtn {
+  border-radius: 0 5px 5px 0;
 }
 
 .CedulaBtn.Selected,
@@ -107,7 +108,7 @@
   font-weight: 800;
 }
 
-.PasswordInput{
+.PasswordInput {
   margin-top: 1rem;
 }
 
@@ -115,7 +116,6 @@
   width: 100%;
 }
 
-/*Banner*/
 .BannerContainer {
   width: 50%;
   max-height: 100vh;
@@ -128,4 +128,39 @@
   height: 85%;
   margin: auto;
   margin-top: 7rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .LoginContainer {
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    margin-top: 6rem;
+  }
+
+  .FormContainer {
+    width: 100%;
+  }
+
+  .FormElement {
+    width: 80%;
+    margin-top: 3rem;
+  }
+
+  .BannerContainer {
+    display: none;
+  }
+
+  .SubmitBtn, .CedulaBtn, .ContratoBtn {
+    width: 100%;
+  }
+
+  .CedulaBtn {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .ContratoBtn {
+    border-radius: 0 5px 5px 0;
+  }
 }

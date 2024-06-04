@@ -1,6 +1,18 @@
-.Container {
+.ContainerPQR {
   width: 33%;
   margin: auto;
+
+  & h2,
+  h3 {
+    color: var(--TextBlue);
+    text-align: center;
+    margin: 1rem;
+  }
+
+  & p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 }
 
 .BannerPQR {
@@ -9,13 +21,14 @@
   margin-top: 4rem;
 }
 
-.Selector {
+.SelectorPQR {
   width: 55%;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .SubmitBtn {
@@ -51,7 +64,8 @@
   width: 100%;
   border: solid 1px var(--TextBlue);
   border-radius: 0.4rem;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
   height: 2rem;
   padding: 15px;
 }
@@ -63,4 +77,69 @@
 
 .SubmitBtn {
   width: 100%;
+}
+
+h4 {
+  color: var(--TextBlue);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.file-select {
+  position: relative;
+  display: inline-block;
+}
+
+.file-select::before {
+  background-color: white;
+  border: dashed 2px var(--TextBlue);
+  color: #7e84a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: "Adjunta tus archivos";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.file-select input[type="file"] {
+  opacity: 0;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+}
+
+#archivos::before {
+  content: "Adjunta tus archivos";
+}
+
+.is-required:after {
+  content: "*";
+  margin-left: 3px;
+  color: red;
+  font-weight: bold;
+}
+
+/* Pop Up */
+.swal2-popup .swal2-html-container p {
+  color: var(--TextBlue) !important;
+}
+
+.swal2-title {
+  color: var(--TextBlue) !important;
+}
+
+.swal2-popup {
+  width: 50% !important;
+}
+
+.swal2-popup .swal2-html-container div{
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

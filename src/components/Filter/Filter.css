@@ -46,4 +46,12 @@ padding-right: -0.5rem;
     vertical-align: middle;
   }
   
+
+  @media (max-width: 768px) {
+    .dropdown-container{
+      width: 10rem;
+      margin-left: 2rem;
+      margin-top: 1rem;
+    }
+  }
   

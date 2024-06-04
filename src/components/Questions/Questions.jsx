@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { FaArrowRightLong } from "react-icons/fa6";
-import questionsImg from "../../assets/questions.jpg";
+import questionsImg from "../../assets/questions.svg";
+import PreguntaGuido from "../../assets/PreguntasGuido.svg"
 
 import "./Questions.css";
 
@@ -25,7 +26,8 @@ export function Questions() {
         <h2>Respondemos a tus preguntas</h2>
         <section className="sectionQuestion">
           <section>
-            <img src={questionsImg} alt="" />
+            <img src={questionsImg} alt="Resuelve tus dudas con Guido" className="questionsImg" />
+            <img src={PreguntaGuido} alt="Resuelve tus dudas con Guido" className="preguntaGuido" />
             <button></button>
           </section>
         <section className="consultaSection">

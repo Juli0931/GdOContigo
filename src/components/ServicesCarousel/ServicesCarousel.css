@@ -50,3 +50,21 @@
 .service-card:hover .overlay {
   opacity: 1;
 }
+
+.carouselTitle{
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .carouselTitle{
+    display: block;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: -1.5rem;
+  }
+
+  .service-link{
+    display: none;
+  }
+}

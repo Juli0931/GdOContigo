@@ -7,6 +7,7 @@ import { TiWarningOutline } from "react-icons/ti"; /* warning ya no se necesita 
 import { FiHelpCircle } from "react-icons/fi";
 import BrillaLogoB from "../../assets/BrillaLogoB.png";
 import BrillaLogoW from "../../assets/BrillaLogoW.png";
+import BrillaResponsive from "../../assets/BrillaResponsive.svg";
 
 import "./Shortcut.css";
 
@@ -35,7 +36,8 @@ export function Shortcut() {
 
       <div className="card-container" onMouseEnter={() => setBrillaLogo(BrillaLogoW)} onMouseLeave={() => setBrillaLogo(BrillaLogoB)}>
         <div className="icon">
-          <img src={brillaLogo} alt="Brilla" />
+          <img src={brillaLogo} alt="Brilla" className="brillaNoResponsive"/>
+          <img src={BrillaResponsive} alt="Brilla" className="brillaResponsive"/>
         </div>
         <div className="text brilla-text">
           <strong>Conecta</strong> con Brilla
