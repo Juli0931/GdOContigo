@@ -14,6 +14,7 @@ import Card9 from '../../assets/card9.png'
 import "./Retos.css";
 
 import { Link } from "react-router-dom";
+import { Footer } from "../Footer/Footer";
 
 const CardRetoProgreso = ({url, title, progreso}) =>{
     return(
@@ -37,7 +38,7 @@ const CardRetoProgreso = ({url, title, progreso}) =>{
     )
 }
 
-const CardReto = ({url, title}) =>{
+export const CardReto = ({url, title}) =>{
     return(
         <>
             <div className="cardRetoContainer">
@@ -91,3 +92,4 @@ export function Retos(){
     </>
   );
 }
+

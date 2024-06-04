@@ -1,7 +1,7 @@
 import React from 'react';
 import "./index.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home , PagoFactura , Login, PsePago, HistoryUser, FacturacionDigital, FacturacionDigital2, AtenciónCliente, ImprimirFactura, MisRetos } from './pages';
+import { Home , PagoFactura , Login, PsePago, HistoryUser, FacturacionDigital, FacturacionDigital2, AtenciónCliente, ImprimirFactura, MisRetos, RetosAmbiente} from './pages';
 
 
 export function App() {
@@ -18,6 +18,7 @@ export function App() {
         <Route path="/FacturacionDigital2" element={<FacturacionDigital2 />} />
         <Route path="/ImprimirFactura" element={<ImprimirFactura />} />
         <Route path="/MisRetos" element={<MisRetos />} />
+        <Route path="/RetosAmbiente" element={<RetosAmbiente />} />
     
       </Routes>
     </BrowserRouter>

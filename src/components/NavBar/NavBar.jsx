@@ -64,7 +64,7 @@ const SubmenuC = () => {
 
         <ul>
           <li><h3>Ahorra con GdO</h3></li>
-          <li><a href="#">Desafios de ahorro energético</a></li>
+          <li><Link to={"/RetosAmbiente"}><a href="#">Desafios de ahorro energético</a></Link></li>
           <li><a href="#">Programas de incentivos</a></li>
           <li><a href="#">Consejos para ahorrar energía</a></li>
         </ul>
