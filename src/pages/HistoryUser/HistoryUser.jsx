@@ -64,7 +64,7 @@ export function HistoryUser() {
   return (
     <>
       <NavBar />
-      <div className="Container">
+      <div className="ContainerPage">
         <h2>¡Hola, cliente GdO!</h2>
         <h2 className="Saludo">Nos encanta tenerte de nuevo</h2>
         <div className="SelectorTable">

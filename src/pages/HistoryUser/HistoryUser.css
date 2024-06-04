@@ -1,4 +1,4 @@
-.Container {
+.ContainerPage {
   width: 80%;
   margin: auto;
   margin-top: 3rem;
@@ -36,6 +36,11 @@
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
+  .ContainerPage {
+    width: 80%;
+    margin: 3rem
+  }
+
   .Saludo {
     font-size: 20px;
   }
@@ -43,6 +48,7 @@
   .SelectorTable {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -53,9 +59,16 @@
     height: 2.5rem;
     justify-content: center;
     margin-top: 1rem;
-    background-color: #bebebe;
+    background-color: var(--DarkBlue);
     color: var(--White);
     margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+
+    &.RetosBtn {
+      background-color: #EBEAF2;
+      color: var(--DarkBlue);
+    }
   }
 
   .PagosBtn {
@@ -64,10 +77,5 @@
 
   .RetosBtn {
     border-radius: 0 5px 5px 0;
-  }
-
-  .PagosBtn.Selected,
-  .RetosBtn.Selected {
-    background-color: var(--DarkBlue);
   }
 }

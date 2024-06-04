@@ -156,6 +156,7 @@ export function AtenciónCliente() {
                 type="text"
                 name="nombreCompleto"
                 value={formData.nombreCompleto}
+                placeholder="Ej: Marina Ramos"
                 onChange={handleInputChange}
               />
             </div>
@@ -166,6 +167,7 @@ export function AtenciónCliente() {
                 type="number"
                 name="cedula"
                 value={formData.cedula}
+                placeholder="Ej: 42149674"
                 onChange={handleInputChange}
               />
             </div>
@@ -176,16 +178,18 @@ export function AtenciónCliente() {
                 type="number"
                 name="telefono"
                 value={formData.telefono}
+                placeholder="Ej: 3224698581"
                 onChange={handleInputChange}
               />
             </div>
             <div>
-              <label className="LabelTxt is-required">Correo electrónico</label>
+              <label className="LabelTxt">Correo electrónico</label>
               <input
                 className="SelectorInput"
                 type="email"
                 name="email"
                 value={formData.email}
+                placeholder="Ej: Ramos017@gmail.com"
                 onChange={handleInputChange}
               />
             </div>
@@ -198,6 +202,7 @@ export function AtenciónCliente() {
                 type="text"
                 name="direccion"
                 value={formData.direccion}
+                placeholder="Ej: Cra 122 # 7 - 49"
                 onChange={handleInputChange}
               />
             </div>
@@ -208,6 +213,7 @@ export function AtenciónCliente() {
                 type="text"
                 name="ciudad"
                 value={formData.ciudad}
+                placeholder="Ej: Cali"
                 onChange={handleInputChange}
               />
             </div>
@@ -235,6 +241,7 @@ export function AtenciónCliente() {
                 type="text"
                 name="titulo"
                 value={formData.titulo}
+                placeholder="Ej: Contador en mal estado"
                 onChange={handleInputChange}
               />
             </div>
@@ -244,6 +251,7 @@ export function AtenciónCliente() {
                 className="SelectorInput"
                 name="descripcion"
                 value={formData.descripcion}
+                placeholder="Describe tu problema para que podamos ayudarte"
                 onChange={handleInputChange}
               />
             </div>
@@ -276,6 +284,7 @@ export function AtenciónCliente() {
                 className="SelectorInput"
                 type="number"
                 value={consultaId}
+                placeholder="Ej: 42149876"
                 onChange={handleConsultaChange}
               />
             </div>
