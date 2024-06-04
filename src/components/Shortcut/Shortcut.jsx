@@ -31,7 +31,7 @@ export function Shortcut() {
       <h2>Accesos rápidos</h2>
       <div className="shortcut-container">
       <Card icon={<HiOutlineCurrencyDollar className='w-7 md:w-12' />} text={<><strong>Paga</strong> tu factura</>}/>
-      <Card icon={<LuFiles />} text={<><strong>Saca el duplicado<br /></strong>{" "}de tu factura</>}/>
+      <Card icon={<LuFiles />} text={<><strong>Saca el duplicado</strong>de tu factura</>}/>
       <Card icon={<FaRegUser />} text={<><strong>Soy cliente GdO</strong></>}/>
 
       <div className="card-container" onMouseEnter={() => setBrillaLogo(BrillaLogoW)} onMouseLeave={() => setBrillaLogo(BrillaLogoB)}>
