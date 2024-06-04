@@ -3,7 +3,7 @@ import "./MisRetos.css";
 
 export function MisRetos() {
   return (
-    <div className="">
+    <div>
         <NavBar></NavBar>
         <Retos></Retos>
         <Footer />

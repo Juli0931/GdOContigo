@@ -1,6 +1,3 @@
-import { Labels, Indicator } from "../Forms/Forms";
-import { NavBar } from "../NavBar/NavBar";
-import FondoPagos from '../../assets/FondoPagos.jpg'
 import Card1 from '../../assets/card1.png'
 import Card2 from '../../assets/card2.png'
 import Card3 from '../../assets/card3.png'
@@ -60,29 +57,27 @@ export const CardReto = ({url, title}) =>{
 export function Retos(){
   return (
     <>
-        <div className="Container">
+        <div className="ContainerRetos">
         <h2>¡Hola, cliente GdO!</h2>
         <h2 className="Saludo">Nos encanta tenerte de nuevo</h2>
-        <div className="SelectorTable">
+        <div className="SelectorTableR">
             <Link to={"/HistoryUser"}>
           <button className="PagosBtn2">Historial de facturación</button>
           </Link>
           <button className="RetosBtn2">Mis retos</button>
         </div>
         <div className="cardsContainer">
-            <h2>Mis retos en progreso</h2>
+            <h2 className='RetosTitulos'>Mis retos en progreso</h2>
             <div className="cardsProgressContainer">
                 <CardRetoProgreso url={Card1} title={<>Reto de temperaturas más bajas</>} progreso={"50"}/>
                 <CardRetoProgreso url={Card2} title={<>Apagar la llama</>} progreso={"60"}/>
                 <CardRetoProgreso url={Card3} title={<>Transporte verde</>} progreso={"30"}/>
             </div>
-            <h2>También te pueden interesar estos retos</h2>
+            <h2 className='RetosTitulos'>También te pueden interesar estos retos</h2>
             <div className="cardsProgressContainer">
                 <CardReto url={Card4} title={<>Ahorro de agua inteligente</>}/>
                 <CardReto url={Card5} title={<>Iluminación eficiente</>}/>
                 <CardReto url={Card6} title={<>Reciclaje responsable</>}/>
-            </div>
-            <div className="cardsProgressContainer">
                 <CardReto url={Card7} title={<>Apagón digital semanal</>}/>
                 <CardReto url={Card8} title={<>Cocina eficiente</>}/>
                 <CardReto url={Card9} title={<>Hogar sostenible</>}/>
