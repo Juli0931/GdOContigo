@@ -46,7 +46,7 @@ h2{
   transition: content 0.3s ease;
 }
 
-.text {
+.textShort {
   margin-left: 20px;
   margin-top: 25px;
   font-size: 18px;
@@ -54,6 +54,10 @@ h2{
 }
 
 .brilla-text {
+  margin-left: 20px;
+  margin-top: 25px;
+  font-size: 18px;
+  width: 70%;
   margin-top: 32px;
 }
 

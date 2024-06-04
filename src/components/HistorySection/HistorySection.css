@@ -38,8 +38,9 @@
 }
 
 .gridImage1 {
-  scale: 87.5%;
-  margin-top: -1.6rem;
+  scale: 98%;
+  margin-top: 0.2rem;
+  margin-left: 2rem;
 }
 .gridImage2 {
   scale: 103.5%;
@@ -57,8 +58,8 @@
 }
 .overlay-button1 {
   position: absolute;
-  top: 84%;
-  left: 35%;
+  top: 90%;
+  left: 37%;
   transform: translate(-50%, -50%);
   border: 1px solid var(--DarkBlue); 
   border-radius:5%;

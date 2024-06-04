@@ -10,7 +10,7 @@ import "./estilos/VerOModificar.css"
 const Texts = ({sourceIcon,iconName, lineText, textName}) =>{
     return(
         <>
-            <div className="text modificar">
+            <div className="txtMod">
                 <p className={textName}>{lineText}</p>
                 <img className={iconName} src={sourceIcon} ></img>
             </div>
