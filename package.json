@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://juli0931.github.io/GdOContigo",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,11 +13,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "gh-pages": "^6.1.1",
     "vite": "^5.2.0"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.2.1",
-    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.1.0",
