@@ -1,0 +1,59 @@
+.text{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 1rem;
+    color: var(--Blue);
+    margin-bottom: 1rem;
+}
+.agendarHeader{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.agendarTitulo{
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--TextBlue);
+}
+.agendarSubTitulo{
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    left: -11rem;
+    color: var(--TextBlue);
+}
+.agendarContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.agendar{
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+}
+.ver{
+    background-color: white;
+    color: var(--TextBlue);
+}
+.nueva{
+    background-color: var(--DarkBlue);
+    color: white;
+}
+.agendarButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.seguimiento{
+    color: var(--Blue);
+    text-decoration: underline;
+    margin-top: 1rem;
+}
+.seguimiento:hover{
+    cursor: pointer;
+}

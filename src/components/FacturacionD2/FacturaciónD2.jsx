@@ -49,7 +49,7 @@ export function FacturacionD2() {
                 <label htmlFor=""><input type="radio" name="notificacion" />Correo electrónico</label> 
                 <label htmlFor=""><input type="radio" name="notificacion"/>Mensajes de texto</label>
             </div>
-            <button className="continue" onClick={openModal}>REGISTRAR FACTURA</button>
+            <button className="continue" onClick={openModal}>Registrar factura</button>
         </form>
     </section>
     <Modal

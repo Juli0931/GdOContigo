@@ -1,0 +1,54 @@
+.text{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 1rem;
+    color: var(--Blue);
+    margin-bottom: 1rem;
+}
+.agendarHeader{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modTitulo{
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--TextBlue);
+}
+.nuevaCita{
+    scale: 81%;
+}
+.citasSubTitulo{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--TextBlue);
+}
+.vericon1{
+    scale: 85%;
+    padding-right: 2rem;
+}
+.vertext2{
+    margin-left: -2rem;
+}
+.modificar{ 
+    gap: 21rem;
+    padding: 1rem;
+}
+.citas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.3rem;
+}
+.regresar{
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    background-color:var(--TextBlue);
+    color: white ;
+    margin: 1rem 0rem 1rem 0rem;
+}

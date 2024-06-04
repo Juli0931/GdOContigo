@@ -1,0 +1,78 @@
+.fechaContainer{
+    background-color: white;
+    border-radius: 0.3rem;
+    width: 40rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dateInput {
+    display: block;
+    color: var(--Blue);
+    font-size: 16px;
+    width: 100%;
+    max-width: 20rem;
+    box-sizing: border-box;
+    padding: 0rem 5rem 1rem 5rem;
+    border-bottom: 2px solid var(--Blue);
+}
+.dateInput:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+.checksContainer{
+    background-color: white;
+    color: var(--TextBlue);
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    padding: 2rem 2rem 0rem 2rem;
+    gap: 1rem;
+    border-radius: 0.3rem;
+}
+.horas {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 1rem;
+}
+.horas:not(:last-child) {
+    border-bottom: 2px solid var(--Blue);
+}
+.check {
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid var(--Blue);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+.check:checked {
+    background-color: var(--Blue);
+    border: 1px solid var(--Blue);
+}
+
+.check:checked::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.horaText{
+    color: var(--TextBlue);
+    margin-bottom: 1rem;
+}

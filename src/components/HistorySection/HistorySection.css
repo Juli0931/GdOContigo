@@ -38,13 +38,13 @@
 }
 
 .gridImage1 {
-  scale: 95%;
-  margin-top: -0.3rem;
+  scale: 87.5%;
+  margin-top: -1.6rem;
 }
 .gridImage2 {
-  scale: 100%;
-  margin-top: 0.5rem;
-  margin-left: -2.7rem;
+  scale: 103.5%;
+  margin-top: 0.9rem;
+  margin-left:-1.5rem ;
 }
 .gridImage3 {
   scale: 95%;
@@ -52,13 +52,13 @@
 }
 .gridImage4 {
   scale: 95%;
-  margin-top: -0.5rem;
+  margin-top: -0.6rem;
   margin-left: -1.9rem;
 }
 .overlay-button1 {
   position: absolute;
-  top: 88%;
-  left: 30%;
+  top: 84%;
+  left: 35%;
   transform: translate(-50%, -50%);
   border: 1px solid var(--DarkBlue); 
   border-radius:5%;
@@ -74,8 +74,8 @@
 }
 .overlay-button2 {
   position: absolute;
-  top: 88%;
-  left: 61%;
+  top: 84%;
+  left: 65%;
   transform: translate(-50%, -50%);
   border: 1px solid var(--DarkBlue); 
   border-radius:5%;
@@ -91,7 +91,7 @@
 }
 .overlay-button3 {
   position: absolute;
-  top: 39%;
+  top: 37%;
   left: 12.5%;
   transform: translate(-50%, -50%);
   border: 1px solid var(--DarkBlue); 
@@ -108,7 +108,7 @@
 }
 .overlay-button4 {
   position: absolute;
-  top: 88%;
+  top: 84%;
   left: 14.5%;
   transform: translate(-50%, -50%);
   border: 1px solid var(--DarkBlue); 

@@ -26,7 +26,7 @@ const SubmenuB = () => {
         <ul>
           <li><h3>Residencial y comercial</h3></li>
           <li><a href="#">Servicios disponibles</a></li>
-          <li><a href="#">Instalación y mantenimiento</a></li>
+          <li><Link to="/Instalacion_y_mantenimiento">Instalación y mantenimiento"</Link></li>
           <li><a href="#">Consejos para el uso eficiente del gas</a></li>
         </ul>
 
